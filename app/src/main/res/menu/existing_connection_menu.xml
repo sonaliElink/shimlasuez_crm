@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_re_connection"
+        android:icon="@drawable/ic_allocation"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_meter_installation"
+        android:icon="@drawable/ic_completion"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_name_change_correction"
+        android:icon="@drawable/ic_allocation"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_connection_para_change"
+        android:icon="@drawable/ic_completion"
+        android:title="" />
+
+</menu>

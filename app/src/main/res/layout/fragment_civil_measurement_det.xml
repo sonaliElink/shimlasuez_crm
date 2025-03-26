@@ -1,0 +1,3651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_15_dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="Saddle Pit Excav*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_15_dp"
+                            android:layout_marginRight="@dimen/common_15_dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/saddleSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1.4"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:inputType="number"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_saddlelen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/saddleLenEdittxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_saddlewidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/saddleWidtEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_saddledepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/saddleDepthEdiitext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_saddleTotal"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/saddleTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="PE Pipe Trn.Excav*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_15_dp"
+                            android:layout_marginRight="@dimen/common_15_dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/pepipeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1.4"
+                                android:entries="@array/saddlePitExcav"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:inputType="number"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_pePipelen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/pepipeLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_pePipewidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/pepipeWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_pePipedepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/pepipeDepthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_pePipeTotal"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/pepipeTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="L Shape Drain Removal*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/liner_lShapeQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_lShapeLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/lshapeLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_lShapeWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/lshapeWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text="2"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_lShapeDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/lshapeDepthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text="3"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_lShapeTotal"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/lshapeTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/concrete_drain_dismantling_restore"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_concrtDrnLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/concreteLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_concrtDrnWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/concreteWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_concrtDrnDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/concreteDepthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text="1"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_concrtDrnTotal"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/concreteTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/ramp_r_r"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_15_dp"
+                            android:layout_marginRight="@dimen/common_15_dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/rampRRSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1.4"
+                                android:entries="@array/array_rampRandR"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_ramprrQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/rampRRQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ramprrLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/rampRRLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ramprrWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/rampRRWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ramprrDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/rampRRDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ramprrTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/rampRRTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/s_s_m_r_r"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_ssmQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ssmQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ssmLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ssmLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text="3"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ssmWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ssmWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text="3"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ssmDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ssmDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text="3"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ssmTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ssmTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/ccg_cutting_restor"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgRestroQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccgRestroQtyEditttext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgRestroLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccgRestroLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgRestroWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccgRestroWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgRestroDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccgRestroDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgRestroTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccgRestroTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="W Boring*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_15_dp"
+                            android:layout_marginRight="@dimen/common_15_dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/wBoringSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1.4"
+                                android:entries="@array/array_wBoring"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_wBoringQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/wBoringQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_wBoringLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/wBoringLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_wBoringWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/wBoringWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_wBoringDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/wBoringDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_wBoringTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/wBoringTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/cg_restro"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_15_dp"
+                            android:layout_marginRight="@dimen/common_15_dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/cgSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1.4"
+                                android:entries="@array/cgRestro"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/cgQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgLenth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/cgLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:inputType="number"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/cgWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/cgDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_cgTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/cgTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/fc_restoration_with_cement_mortar"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/common_15_dp"
+                            android:layout_marginRight="@dimen/common_15_dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/fcSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1.4"
+                                android:entries="@array/fcRestrowhcmtMtr"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/liner_fcQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/fcQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_fcLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/fcLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:inputType="number"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_fcWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/fcWidthEditttext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_fcDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/fcDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_fcTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/fcTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:inputType="number"
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="@string/d_r_of_burnt_brick"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_drBurntQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/drBurntQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_drBurntLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/drBurntLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_drBurntWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/drBurntWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:inputType="number"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_drBurntDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/drBurntDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_drBurntTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/drBurntTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:inputType="number"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="Plastering with CM*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_plasterQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/plasterQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_plasterLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/plasterLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_plasterWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/plasterWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:inputType="number"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_plasterDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/plasterDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_plasterTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/plasterTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="@dimen/common_30_dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="CC Mortar*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_ccmrtrQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccmrtrQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ccmrtrLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccmrtrLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ccmrtrWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccmrtrWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ccmrtrDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccmrtrDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:inputType="number"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_ccmrtrTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ccmrtrTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="#00000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                card_view:cardBackgroundColor="#FFF"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="60dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:text="Other Civil Works*"
+                                android:textColor="#86000000"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:id="@+id/liner_othercvlQty"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Qty*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/othercvlQtyEdittext"
+                                    android:layout_width="match_parent"
+                                    android:inputType="number"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_othercvlLen"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Length*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/othercvlLenEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_othercvlWidth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Width*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/othercvlWidthEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_othercvlDepth"
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Depth*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/othercvlDepthEdittext"
+                                    android:layout_width="62dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edittext_border"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:inputType="number"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/liner_othercvlTotal"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="Total(m3)*"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/othercvlTotalEdittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/edittext_border"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textColor="@color/mmgblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/submitCivilMeasurementButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="@dimen/common_40_dp"
+                        app:backgroundTint="@color/mmgblue"
+                        app:cornerRadius="0dp"
+                        app:rippleColor="#33AAAAAA" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#00000000" />
+        </LinearLayout>
+
+</ScrollView>

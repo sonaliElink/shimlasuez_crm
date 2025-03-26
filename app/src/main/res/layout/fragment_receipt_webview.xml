@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Shantanu.Collection.ReceiptWebviewFragment">
+
+        <LinearLayout
+            android:id="@+id/linearReceiptLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <!--  Printer -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/select_printer_size"
+                            android:textColor="@color/secondaryColor"
+                            android:textSize="@dimen/_9ssp" />
+
+                        <Space
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="match_parent" />
+
+                        <RadioGroup
+                            android:id="@+id/rdPrintSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rd2inch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/two_inch"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:checked="true"/>
+
+                                <Space
+                                    android:layout_width="@dimen/_4sdp"
+                                    android:layout_height="match_parent" />
+
+                                <RadioButton
+                                    android:id="@+id/rd3inch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/three_inch"
+                                    android:textSize="@dimen/_10ssp" />
+                        </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="@string/printer_status"
+                            android:textColor="@color/secondaryColor"
+                            android:textSize="@dimen/_9ssp" />
+
+                        <Space
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/txtPrinterStatus"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:maxLines="1"
+                            android:text="@string/not_connected"
+                            android:gravity="center"
+                            android:textColor="@color/red"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_9ssp" />
+
+                        <Space
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/ImgSearchPrinter"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_blu_searching"
+                            android:layout_marginRight="@dimen/_4sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+                <!---->
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/btnPrint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/print"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/green_500"
+                    android:layout_marginTop="@dimen/_4sdp"/>
+
+                <WebView
+                    android:id="@+id/receiptWebview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+</FrameLayout>

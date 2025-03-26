@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1051651740740",
+    "project_id": "crmandroid-4bf5c",
+    "storage_bucket": "crmandroid-4bf5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051651740740:android:3641bf92d6a31ad029d811",
+        "android_client_info": {
+          "package_name": "elink.suezShimla.water.crm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051651740740-ojd9ndigucm3mvn6pecklja3nb99vngc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "elink.suezShimla.water.crm",
+            "certificate_hash": "e855ac77e36002eb6d3fd726065c9da196a72899"
+          }
+        },
+        {
+          "client_id": "1051651740740-q4ailm2im0arnfe14anumgtj4bvce4v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmwITEzkQRmpMNmFKqJW6YQfKwUDtkp_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051651740740-q4ailm2im0arnfe14anumgtj4bvce4v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

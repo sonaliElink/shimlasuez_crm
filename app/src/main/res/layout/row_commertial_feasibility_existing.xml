@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_left_consumer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:hint="@string/connection_no"
+            android:inputType="number"
+            android:paddingLeft="@dimen/common_7_dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColorHint="@android:color/darker_gray"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_right_consumer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:paddingLeft="@dimen/common_7_dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="number"
+            android:hint="@string/floor_number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+           >
+        <ImageButton
+            android:layout_width="@dimen/common_40_dp"
+            android:layout_height="@dimen/common_40_dp"
+            android:scaleType="centerInside"
+            android:padding="@dimen/common_5_dp"
+            android:background="@drawable/ic_send"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

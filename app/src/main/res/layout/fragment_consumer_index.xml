@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+           android:id="@+id/summarySwipeRefresher"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="@dimen/common_50_dp"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_10_dp"
+                android:text="@string/consumer_index"
+                android:textColor="@color/secondaryColor"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginBottom="@dimen/common_15_dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                           <!-- <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/common_10_dp">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/zoneSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:layout_weight="1.4"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/zone"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/common_7_dp"
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>-->
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_unauthorized_connection_spinner_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_unauthorized_connection_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:layout_marginEnd="@dimen/common_5_dp"
+                                    android:layout_marginStart="@dimen/common_5_dp"
+                                    android:visibility="visible"
+                                    android:orientation="vertical">
+
+                                    <com.tiper.MaterialSpinner
+                                        android:id="@+id/zoneSpinner"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/common_55_dp"
+                                        android:entries="@array/salutation"
+                                        android:textColor="@color/black"
+                                        android:hint="@string/zone"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+
+                                        app:spinnerMode="dropdown"
+                                        tools:ignore="MissingConstraints" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                           <!-- <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/common_10_dp">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/wardSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:layout_weight="1.4"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/ward"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>-->
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_civil_cons_with_ccmc_water_spinner_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/wardSpinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:layout_marginEnd="@dimen/common_5_dp"
+                                    android:layout_marginStart="@dimen/common_5_dp"
+                                    android:textColor="@color/black"
+                                    android:hint="@string/ward"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_civil_cons_with_ccmc_water_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginEnd="@dimen/common_10_dp"
+                            android:layout_marginStart="@dimen/common_10_dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                          <!--  <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginRight="@dimen/common_5_dp">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/msrSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:layout_weight="1.4"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/msr"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>-->
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_no_of_dwelling_units_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_marginEnd="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/msrSpinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:textColor="@color/black"
+                                    android:hint="@string/msr"
+
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_no_of_dwelling_units"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginEnd="@dimen/common_10_dp"
+                            android:layout_marginStart="@dimen/common_10_dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                  <!--          <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/common_10_dp">
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/srSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:textColor="@color/black"
+                                    android:hint="@string/sr"
+
+                                    app:spinnerMode="dropdown"
+                                    android:layout_weight="1.4"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>-->
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_is_occupier_security_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_marginEnd="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_5_dp"                        android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/srSpinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/sr"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_is_occupier_security"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:layout_marginTop="@dimen/common_10_dp"
+                            android:layout_marginEnd="@dimen/common_10_dp"
+                            android:layout_marginStart="@dimen/common_10_dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                           <!-- <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/common_10_dp">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/groupSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:layout_weight="1.4"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/group"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+-->
+
+                            <LinearLayout
+                                android:id="@+id/ll_connection_purpose_spinner_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_marginEnd="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/groupSpinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/group"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                           <!-- <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/common_10_dp">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/lotSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:layout_weight="1.4"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/lot"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+-->
+
+                            <LinearLayout
+                                android:id="@+id/ll_connection_purpose_spinner_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_marginEnd="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/lotSpinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/lot"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textColor="@color/black"
+
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                          <!--  <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/common_10_dp">
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/areaSpinnerFix"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:textColor="@color/black"
+                                    android:hint="@string/area"
+
+                                    app:spinnerMode="dropdown"
+                                    android:layout_weight="1.4"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>-->
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_connection_purpose_spinner_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_10_dp"
+                                android:layout_marginEnd="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.tiper.MaterialSpinner
+                                    android:id="@+id/areaSpinner"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/common_55_dp"
+                                    android:entries="@array/salutation"
+                                    android:hint="@string/area"
+                                    android:textColor="@color/black"
+
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    app:spinnerMode="dropdown"
+                                    tools:ignore="MissingConstraints" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_consumer_index_back"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#85C908"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+            <Button
+                android:id="@+id/btn_submit_consumer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_55_dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#85C908"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

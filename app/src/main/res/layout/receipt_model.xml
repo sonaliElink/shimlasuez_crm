@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="@dimen/_2sdp" >
+
+        <TextView
+            android:id="@+id/txtRecptConsNo"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="0302000096"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/txtRecptNo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="102280320044216"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/txtRecptAmnt"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="51761056"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+
+        <ImageView
+            android:id="@+id/imgRecptView"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_eye"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:backgroundTint="@color/main_color"/>
+
+</LinearLayout>

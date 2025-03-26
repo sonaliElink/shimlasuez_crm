@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "274204566808",
+    "firebase_url": "https://crm-suez-e633d.firebaseio.com",
+    "project_id": "crm-suez-e633d",
+    "storage_bucket": "crm-suez-e633d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274204566808:android:10f808bf5ad27499d66a6d",
+        "android_client_info": {
+          "package_name": "elink.suezShimla.water.crm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274204566808-660f7c8p028hlvoa2a81b6s8779qrjqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "elink.suezShimla.water.crm",
+            "certificate_hash": "812248355529969cd1eaab392264272a6773999a"
+          }
+        },
+        {
+          "client_id": "274204566808-v3isrl3af1p5cuferadm525g9tuejrs0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "elink.suezShimla.water.crm",
+            "certificate_hash": "e44322dec1e3d3698aa5f3dd05b0f7f3efb0eb3d"
+          }
+        },
+        {
+          "client_id": "274204566808-6o6so9mir4ce8a0utektb8ueul7uvt94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnl7uV1DTaAqMa7e4FFGM71HwmvI5WO9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274204566808-6o6so9mir4ce8a0utektb8ueul7uvt94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

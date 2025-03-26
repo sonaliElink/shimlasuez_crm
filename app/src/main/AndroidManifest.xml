@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="elink.suezShimla.water.crm">
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Shantanu's Permission -->
+    <uses-feature android:name="android.hardware.bluetooth" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="elink.suezShimla.water.crm.Base.App"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/mjp"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/mjp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,InnerclassSeparator,UnusedAttribute, LockedOrientationActivity"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name="elink.suezShimla.water.crm.PluggedToActive.PluggedToActivity"
+            android:label="Plugged To Active"
+            android:exported="false" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ActiveToPlugged.ActiveToPluggedActivity"
+            android:label="Active To Plugged"
+            android:exported="false" />
+        <activity
+            android:name="elink.suezShimla.water.crm.InternalNetworkAudit.activity.InternalNetworkAuditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Activity.WebviewActivity" />
+        <!--
+    <service
+            android:name=".ServiceClass"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        -->
+        <activity android:name="elink.suezShimla.water.crm.MeterManagementSystem.ViewContractorDetails.MeterInstallationContractorDetails" />
+        <activity android:name="elink.suezShimla.water.crm.MeterManagementSystem.ViewContractorDetails.ViewDetailsByContractor" />
+        <activity android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Fragment.ConsumerDetFragmentNew" />
+        <activity android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Material.MaterialActivity" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Activity.MMGScreenActivity"
+            android:label="Meter Installation Entry"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Activity.MMGScreenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ChangePassword.PreChangeActivity"
+            android:label="Change MPIN"
+            android:parentActivityName="elink.suezShimla.water.crm.ChangePassword.PreChangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Activity.MMGMainActivity"
+            android:label="@string/meter_installation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Activity.MMGScreenDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionMeter.ActivityDisconnectMeter"
+            android:label="@string/disconection_meter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Notifications.Activity.NotificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCZoneAndWard.NCZoneAndWardDetails.NCZoneWardDetailsActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCWorkCompletion.Activity.NCWorkCompletionDetailedActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCWorkCompletion.Activity.NCWorkCompletionActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCWorkComplaintLocation.NCWorkComplaintLocationActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCWorkComplaintLocation.Activity.NCWorkComplaintLocationDetailsActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCTodaysCompleteWork.NCTodaysWorkCompletedActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCRegistrationAndHistory.Activity.NCComplaintRegistrationActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCRegistrationAndHistory.Activity.NCComplaintHistoryActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCReallocation.Activity.NCWorkReallocationDetailsActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCReallocation.Activity.NCWorkReallocationActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCMapScreen.NCMapActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCAllocation.Activity.NCWorkAllocationDetailsActivity" />
+        <activity android:name="elink.suezShimla.water.crm.NoConsumerComplaint.NCAllocation.Activity.NCWorkAllocationActivity" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.RegistrationAndHistory.Activity.ConsumerHistoryActivity"
+            android:label="@string/complaint_history" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.RegistrationAndHistory.Activity.ActivityTrackingHistory"
+            android:label="@string/history_tracking" />
+        <activity android:name="elink.suezShimla.water.crm.graph.MyBarChart" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MMGReports.MeterManagementGroupReportsActivity"
+            android:label="@string/MMG_Reports"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.ZoneAndWard.ZoneAndWardDetails.ZoneAndWardDetailsActivity"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.IssueMeterToFixer.Activity.IssueMeterToFixerDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionDetailedActivity"
+            android:label="Work Allocated Detail"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.map.SingleMapLocationActivity"
+            android:label="@string/location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionBillingAdjustmentActivity"
+            android:label="@string/work_completion_detail"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionBillingAdjustmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.CommercialFeasibility.CommercialFeasibilityDetailedActivity"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.CommercialFeasibility.CommercialFeasibilityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.CommercialFeasibility.CommercialFeasibilityActivity"
+            android:label="@string/commercial_feasibility"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.CommercialFeasibility.CommercialFeasibilityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.IssueMeterToFixer.Activity.IssueMeterToFixerDetailedActivity"
+            android:label="@string/fixer_allocation"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.IssueMeterToFixer.Activity.IssueMeterToFixerDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionActivity"
+            android:label="@string/work_completion"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletedActivity"
+            android:label="@string/work_completion"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkCompletion.Activity.WorkCompletedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.TodaysCompletedWork.TodaysCompletedWorkActivity"
+            android:label="@string/today_s_completed_work"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.TodaysCompletedWork.TodaysCompletedWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.TodaysCompletedWork.TodayWorkCompletedActivity"
+            android:label="@string/today_s_completed_work"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.TodaysCompletedWork.TodayWorkCompletedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.RemoveMeter.RemoveMeterActivity"
+            android:label="@string/remove_meter"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.RemoveMeter.RemoveMeterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionAndDismantling.ReConnectionWorkClosing.ReConnectionWorkClosingActivity"
+            android:parentActivityName="elink.suezShimla.water.crm.DisconnectionAndDismantling.DefaulterList.DefaulterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionAndDismantling.ReConnectionWorkAllocation.ReConnectionWorkAllocationActivity"
+            android:parentActivityName="elink.suezShimla.water.crm.DisconnectionAndDismantling.DefaulterList.DefaulterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionAndDismantling.NoticeHistory.NoticeHistoryActivity"
+            android:parentActivityName="elink.suezShimla.water.crm.DisconnectionAndDismantling.DefaulterList.DefaulterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionAndDismantling.CaptureReason.CaptureReasonActivity"
+            android:parentActivityName="elink.suezShimla.water.crm.DisconnectionAndDismantling.DefaulterList.DefaulterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterReadingDetailsActivity"
+            android:label="@string/meter_reading_details"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.UploadDocuments.SelectDocument.SelectDocumentActivity"
+            android:label="@string/select_document"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.UploadDocuments.SelectDocument.SelectDocumentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.UploadDocuments.UploadDocumentsActivity"
+            android:label="@string/upload_documents"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.UploadDocuments.UploadDocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionAndDismantling.DisconnectionOrderlist.DisconnectionOrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.DisconnectionAndDismantling.DefaulterList.DefaulterListActivity"
+            android:label="@string/defaulter_list"
+            android:parentActivityName="elink.suezShimla.water.crm.DisconnectionAndDismantling.DefaulterList.DefaulterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MassMeterInstallatin.MassMeterInstallation"
+            android:label="@string/mass_application_for_meter_installation"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.MassMeterInstallatin.MassMeterInstallation"
+            android:screenOrientation="portrait" />
+        <!--
+this attribute remove from below activity because of back press issue
+        android:parentActivityName=".MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+        -->
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+            android:label="@string/allocated_work"
+            android:screenOrientation="portrait" />
+        <!--
+this attribute remove from below activity because of back press issue
+        android:parentActivityName=".MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+        -->
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterInstallationSentAutheticationActivity"
+            android:label="@string/work_completion"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+            android:screenOrientation="portrait" />
+        <!--
+this attribute remove from below activity because of back press issue
+        android:parentActivityName=".MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+        -->
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterInstallationAutheticatedActivity"
+            android:label="Saved Details by Fixer"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallation.MeterInstallationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallationReplacementPrint.MeterInstallationReplacementPrint"
+            android:label="@string/meter_installation_replacement"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.MeterInstallationReplacementPrint.MeterInstallationReplacementPrint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.IssueToMmgDept.IssueToMmgDialoug"
+            android:label="Issue To MMG Details"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.IssueToMmgDept.IssueToMmgDialoug"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.IssueToMmgDept.IssueToMmgDept"
+            android:label="Issue To MMG Dept."
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.IssueToMmgDept.IssueToMmgDept"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.AcceptMMGDept.Activity.AcceptMMGMeterDetailsActivity"
+            android:label="@string/accept_meter"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.AcceptMMGDept.Activity.AcceptMMGMeterDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.Authentication.AuthenticationActivity"
+            android:label="@string/authentication"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.Authentication.AuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.AcceptMeter.AcceptMeterActivity"
+            android:label="@string/accept_meter"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.AcceptMeter.AcceptMeterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.StoreManagementActivity"
+            android:label="@string/store_management"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.StoreManagement.StoreManagementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.AcceptMMGDept.AcceptMMGDeptActivity"
+            android:label="@string/accept_mmg_dept"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.AcceptMMGDept.AcceptMMGDeptActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MeterManagementSystem.IssueMeterToFixer.IssueMeterToFixerActivity"
+            android:label="@string/fixer_allocation"
+            android:parentActivityName="elink.suezShimla.water.crm.MeterManagementSystem.IssueMeterToFixer.IssueMeterToFixerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.TechnicalFeasibilityPlumberWork.Activity.FeasibilityPlumberWorkDetailsActivity"
+            android:label="@string/feasibility_plumberWork_details"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.TechnicalFeasibilityPlumberWork.Activity.FeasibilityPlumberWorkDetailsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.TechnicalFeasibilityPlumberWork.TechnicalFeasibilityPlumberWorkActivity"
+            android:label="@string/technical_feasibility_plumber_work"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.TechnicalFeasibilityPlumberWork.TechnicalFeasibilityPlumberWorkActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.AuthenticationAndApplicationDetailsActivity"
+            android:label="@string/authentication_application_details"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.AuthenticationAndApplicationDetailsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.AuthenticationAndApplicationActivity"
+            android:label="@string/authentication_application"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.AuthenticationAndApplicationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.ApplicationStatusActivity"
+            android:label="@string/application_status"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.ApplicationStatusActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.ApplicationRequestActivity"
+            android:label="@string/application_request"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.ApplicationRequest.ApplicationRequestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.ExistingConnectionRequestActivity"
+            android:label="@string/existing_connection_request"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.ExistingConnectionRequestActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionRequest.Activity.NewConnectionRequestActivity"
+            android:label="@string/new_connection_request"
+            android:parentActivityName="elink.suezShimla.water.crm.ConnectionRequest.Activity.NewConnectionRequestActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.map.MapActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.map.MapsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.WorkComplaintLocation.Activity.WorkComplaintLocationDetailActivity"
+            android:label="@string/work_complaint_location"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkComplaintLocation.Activity.WorkComplaintLocationDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Reallocation.Activity.WorkReAllocationDetailsActivity"
+            android:label="@string/work_reallocation_detail"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.Reallocation.Activity.WorkReAllocationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.WorkComplaintLocation.WorkComplaintLocationActivity"
+            android:label="@string/work_complaint_location"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.WorkComplaintLocation.WorkComplaintLocationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.RegistrationAndHistory.Activity.ComplaintRegistrationActivity"
+            android:label="@string/compliant_registration"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.RegistrationAndHistory.Activity.ComplaintRegistrationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Reallocation.Activity.WorkReallocationActivity"
+            android:label="@string/work_reallocation"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.Reallocation.Activity.WorkReallocationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Reallocation.Activity.WorkReAllocationCompletionActivity"
+            android:label="@string/work_reallocation"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.Reallocation.Activity.WorkReAllocationCompletionActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Allocation.Activity.WorkAllocationDetailsActivity"
+            android:label="@string/work_allocation_detailed"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.Allocation.Activity.WorkAllocationDetailsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.RegistrationAndHistory.Activity.ComplaintHistoryActivity"
+            android:label="Registration"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Allocation.Activity.WorkAllocationActivity"
+            android:label="@string/work_allocation"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.Allocation.Activity.WorkAllocationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Allocation.Activity.WorkAllocationCompletionActivity"
+            android:label="@string/work_allocation"
+            android:parentActivityName="elink.suezShimla.water.crm.Complaint.Allocation.Activity.WorkAllocationCompletionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Complaint.Allocation.Reading.MeterReadingActivity"
+            android:label="@string/consumer_reading"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTranslucent"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTranslucent"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.Splash.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTranslucent"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="elink.suezShimla.water.crm.Register.AuthenticateRegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTranslucent"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator,LockedOrientationActivity" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionManagement.activity.SiteVisitListActivity"
+            android:label="@string/site_visit_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionManagement.activity.SiteVisitListActivityDetails"
+            android:exported="true"
+            android:label="@string/site_visit_list_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionManagement.activity.Siteuploaddocs"
+            android:exported="true"
+            android:label="@string/site_visit_list_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.ConnectionManagement.activity.SiteVisitListVerficationActivity"
+            android:exported="true"
+            android:label="@string/site_visit_list_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="elink.suezShimla.water.crm.MasterData.ActivityDownloadMaster"
+            android:exported="true"
+            android:label="@string/download_master_data"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+  <activity
+            android:name=".ConnectionManagement.activity.SiteVisitDashboardActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/site_visit_list_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!--
+<activity
+            android:name=".HereMap.RoutingActivity"
+            android:label="Hello HERE Maps!">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <!--
+ <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        -->
+        <!--
+ <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Default" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/mjp" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="elink.suezShimla.water.crm"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="elink.suezShimla.water.crm"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image" />
+        </provider>
+
+        <receiver android:name=".appUtility.TimeReceiver" />
+
+        <service
+            android:name="elink.suezShimla.water.crm.Firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

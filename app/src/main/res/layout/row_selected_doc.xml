@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackgroundBorderless"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/imageRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/docImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/docImageView"
+            android:background="#8c000000"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            tools:text="SomeText" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deleteImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/docImageView"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:background="#8c000000"
+            android:padding="4dp"
+            android:tint="@color/red"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pdfRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/pdfNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/deletePdfImageView"
+            android:gravity="center_vertical"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"
+            tools:text="Name" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deletePdfImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:foregroundGravity="center"
+            android:tint="@color/red"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/deletePdfImageView"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

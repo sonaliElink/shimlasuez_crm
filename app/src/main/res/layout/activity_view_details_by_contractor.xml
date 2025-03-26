@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MeterManagementSystem.ViewContractorDetails.ViewDetailsByContractor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/input"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/card_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/type_of_work"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spn_work_type"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1.4"
+            android:entries="@array/type_of_work"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/card_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/type_of_area"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spn_area_type"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1.4"
+            android:entries="@array/type_of_area"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/card_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/request_type"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spn_request_type"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1.4"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/card_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/zone"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spn_zone"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1.4"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/card_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/fixer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spn_contractor"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1.4"
+            android:spinnerMode="dialog" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_50_dp"
+        android:orientation="horizontal"
+        android:background="@color/card_background"
+        android:weightSum="1" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFromDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="3dp"
+            android:gravity=""
+            android:longClickable="false"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:hint="@string/from_date"
+            android:background="@android:drawable/editbox_background_normal"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_weight="0.8" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:src="@drawable/calendar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_50_dp"
+        android:orientation="horizontal"
+        android:background="@color/card_background"
+        android:weightSum="1" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etToDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="3dp"
+            android:gravity=""
+            android:hint="@string/to_date"
+            android:longClickable="false"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:background="@android:drawable/editbox_background_normal"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_weight="0.8" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:src="@drawable/calendar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/showButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Show"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/mmgblue"
+            app:cornerRadius="0dp"
+            app:rippleColor="#33AAAAAA" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Clear"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/mmgblue"
+            app:cornerRadius="0dp"
+            android:textAllCaps="false"
+            app:rippleColor="#33AAAAAA" />
+
+    </LinearLayout>
+
+</LinearLayout>

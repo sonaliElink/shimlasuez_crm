@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="@dimen/common_40_dp"
+        android:paddingLeft="@dimen/common_10_dp"
+        android:paddingRight="@dimen/common_10_dp"
+        android:paddingTop="@dimen/common_10_dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/common_10_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_20_dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/common_10_dp"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:layout_marginTop="@dimen/common_10_dp"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_16_dp" />
+    </RelativeLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frmCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="@dimen/common_30_dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:text="No"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/frmOk"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="@dimen/common_30_dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:text="Yes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            />
+    </FrameLayout>
+
+</FrameLayout>

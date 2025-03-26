@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FitGridView">
+        <attr name="column" format="integer"/>
+        <attr name="row" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="LiquidRadioButton">
+        <attr name="lrb_innerCircleRadius" format="dimension"/>
+        <attr name="lrb_strokeRadius" format="dimension"/>
+        <attr name="lrb_strokeWidth" format="dimension"/>
+        <attr name="lrb_outterPadding" format="dimension"/>
+        <attr name="lrb_explodeCount" format="integer"/>
+        <attr name="lrb_inAnimDuration" format="integer"/>
+        <attr name="lrb_outAnimDuration" format="integer"/>
+        <attr name="lrb_checkedColor" format="color"/>
+        <attr name="lrb_unCheckedColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AnimCheckBox">
+        <attr name="stroke_width" format="dimension" />
+
+        <attr name="stroke_color" format="color" />
+
+        <attr name="circle_color" format="color" />
+
+        <attr name="checked" format="boolean" />
+
+    </declare-styleable>
+
+
+
+    <!-- CardView support -->
+    <declare-styleable name="CardView">
+        <!-- Background color for CardView. -->
+        <attr name="cardBackgroundColor" format="color"/>
+        <!-- Corner radius for CardView. -->
+        <attr name="cardCornerRadius" format="dimension"/>
+        <!-- Elevation for CardView. -->
+        <attr name="cardElevation" format="dimension"/>
+        <!-- Maximum Elevation for CardView. -->
+        <attr name="cardMaxElevation" format="dimension"/>
+        <!-- Add padding in API v21+ as well to have the same measurements with previous versions. -->
+        <attr name="cardUseCompatPadding" format="boolean"/>
+        <!-- Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. -->
+        <attr name="cardPreventCornerOverlap" format="boolean"/>
+        <!-- Inner padding between the edges of the Card and children of the CardView. -->
+        <attr name="contentPadding" format="dimension"/>
+        <!-- Inner padding between the left edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingLeft" format="dimension"/>
+        <!-- Inner padding between the right edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingRight" format="dimension"/>
+        <!-- Inner padding between the top edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingTop" format="dimension"/>
+        <!-- Inner padding between the bottom edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingBottom" format="dimension"/>
+        <attr name="shadowStartColor" format="color"/>
+        <attr name="shadowEndColor" format="color"/>
+        <attr name="shadowSize" format="dimension"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="RapidFloatingActionLayout">
+        <attr name="rfal_frame_color" format="color"/>
+        <attr name="rfal_frame_alpha" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="RapidFloatingActionButton">
+        <attr name="rfab_size" format="enum">
+            <!-- 56dp -->
+            <enum name="normal" value="0"/>
+            <!-- 40dp -->
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="rfab_drawable" format="reference"/>
+        <attr name="rfab_color_normal" format="color"/>
+        <attr name="rfab_color_pressed" format="color"/>
+        <attr name="rfab_shadow_radius" format="dimension"/>
+        <attr name="rfab_shadow_color" format="color"/>
+        <attr name="rfab_shadow_dx" format="dimension"/>
+        <attr name="rfab_shadow_dy" format="dimension"/>
+        <!-- identificationCodeç”¨äºŽç¡®å®šå”¯ä¸€ä¸ªRFABï¼Œç›®å‰ç”¨åœ¨é€šè¿‡RapidFloatingActionButtonGroupä¸­èŽ·å–æŸä¸€ä¸ªRFAB -->
+        <attr name="rfab_identification_code" format="string"/>
+    </declare-styleable>
+
+
+</resources>

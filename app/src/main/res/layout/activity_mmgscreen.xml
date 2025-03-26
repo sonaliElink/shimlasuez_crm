@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tabs"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/mmgblue"
+      android:minHeight="?attr/actionBarSize"
+      app:tabGravity="fill"
+      app:tabTextColor="#FFF"
+      app:tabMode="scrollable"
+      android:layout_marginTop="0dp"
+      app:tabSelectedTextColor="@color/green_500"
+      />
+
+
+    <elink.suezShimla.water.crm.MeterManagementSystem.MMGEntryDetails.Activity.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp" />
+
+  <ImageButton
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:id="@+id/rightArrow"
+      android:backgroundTint="@color/black"
+      android:baselineAlignBottom="true"
+      android:visibility="gone"
+      android:background="@drawable/ic_arrow_right"
+      android:layout_gravity="bottom|right" />
+
+  <ImageButton
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:id="@+id/leftArrow"
+      android:baselineAlignBottom="true"
+      android:visibility="gone"
+      android:backgroundTint="@color/black"
+      android:outlineSpotShadowColor="@color/blackTrans"
+      android:background="@drawable/ic_arrow_back"
+      android:layout_gravity="bottom|left" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

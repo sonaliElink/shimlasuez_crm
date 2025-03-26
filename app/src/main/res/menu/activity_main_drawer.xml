@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/NavigationTheme">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_complaint"
+            android:icon="@drawable/ic_complain"
+            android:title="@string/complaint" />-->
+
+        <item
+            android:id="@+id/nav_complaint"
+            android:title="@string/complaint">
+            <menu>
+                <item
+                    android:id="@+id/complaint_home"
+                    android:title="@string/complaint_dashboard" />
+                <item
+                    android:id="@+id/complaint_reg_history"
+                    android:title="@string/complaint_reg_history" />
+                <item
+                    android:id="@+id/complaint_work_allocation"
+                    android:title="Work Allocation"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/complaint_work_reallocation"
+                    android:title="Work Reallocation"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/complaint_work_completion"
+                    android:title="Work Completion"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/complaint_todays_work"
+                    android:title="@string/today_s_completed_work"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_noConsumercomplaint"
+                    android:title="@string/noConsumerComplaint"
+                    android:visible="false" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_connection_managementt"
+            android:icon="@drawable/ic_register"
+            android:title="Connection">
+            <menu>
+                <item
+                    android:id="@+id/nav_connection_management"
+                    android:title="@string/connection_managment" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_meter_management_system"
+            android:icon="@drawable/ic_register"
+            android:title="@string/meter_management_system">
+            <menu>
+                <item
+                    android:id="@+id/mmg_home"
+                    android:title="MMG Dashboard" />
+                <item
+                    android:id="@+id/work_allocated"
+                    android:title="Work Allocated"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/hsc_meter_replace"
+                    android:title="HSC/Meter Replacement"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/saved_details_by_fixer"
+                    android:title="Saved Details By Fixer"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/fixerAllocation"
+                    android:title="Fixer Allocation"
+                    android:visible="false" />
+              <!--  <item
+                    android:id="@+id/nav_internal_audit"
+                    android:title="@string/internal_audit_activity"
+                 />-->
+
+
+                <!-- <item
+                     android:id="@+id/mmg_reports"
+                     android:visible="false"
+                     android:title="@string/MMG_Reports" />-->
+            </menu>
+        </item>
+
+
+<!--     Shantanu Code for Payment Collection module-->
+        <item
+            android:id="@+id/nav_main_collection_managementt"
+            android:icon="@drawable/ic_register"
+            android:title="Collection">
+            <menu>
+                <item
+                    android:id="@+id/nav_accept_payment"
+                    android:title="@string/accept_payment" />
+                <item
+                    android:id="@+id/bill_print"
+                    android:title="@string/Bill_Payment" />
+            </menu>
+        </item>
+
+
+        <!-- <item
+             android:id="@+id/nav_internal_audit_report"
+             android:icon="@drawable/ic_register"
+             android:title="@string/internal_audit_report">
+             <menu>
+                 <item
+                     android:id="@+id/nav_internal_audit_activity"
+                     android:title="@string/internal_audit_activity" />
+             </menu>
+         </item>-->
+        <!--<item
+        android:id="@+id/nav_meter_management_system"
+        android:icon="@drawable/ic_register"
+        android:title="@string/meter_management_system" />-->
+
+        <item
+            android:id="@+id/nav_store_management_system"
+            android:icon="@drawable/ic_complain"
+            android:title="@string/store_management"
+            android:visible="false" />
+
+        <item
+            android:icon="@drawable/ic_complain"
+            android:title="@string/meter_management_system"
+            android:visible="false" />
+        <!--   <item
+               android:id="@+id/nav_disconnection_and_dismantling"
+               android:icon="@drawable/ic_register"
+               android:title="@string/disconnection_and_dismantling" />-->
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_vpn_key_black_24dp"
+            android:title="@string/change_mpin" />
+    </group>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_phonelink_lock_black_24dp"
+            android:title="Logout" />
+    </group>
+
+    <item
+        android:id="@+id/app_version"
+        android:title="@string/version"
+        />
+    <item
+        android:id="@+id/nav_back_up"
+        android:title="Back Up" />
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

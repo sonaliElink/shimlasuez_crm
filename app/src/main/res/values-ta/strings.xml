@@ -1,0 +1,1250 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SuezCRM</string>
+    <string name="name">Full Name</string>
+    <string name="imei">IMEI</string>
+    <string name="cannot_be_empty">காலியாக இருக்க முடியாது</string>
+    <string name="empty">Empty!</string>
+    <string name="forgot_pin_dialog">பின் மறந்துவிட்டேன்</string>
+    <string name="login">உள் நுழை</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="complaint">Complaint</string>
+    <string name="noConsumer">No Consumer</string>
+    <string name="employee_id">பணியாளர் பயனர்பெயர்</string>
+    <string name="forgot_pin">பின் மறந்துவிட்டேன்?</string>
+    <string name="request_pin">Request Pin</string>
+    <string name="or_use">or Use</string>
+    <string name="admin_logout">You have been forcefully logged out, to re-login connect your internet &amp; login.</string>
+    <string name="session_timeout">Session Timeout.</string>
+
+    <string name="enter_4_digit_pin">4 இலக்க பின்னை உள்ளிடவும்</string>
+    <string name="MMG_Reports">மீட்டர் மேலாண்மை குழு அறிக்கைகள்</string>
+    <string name="language">Language</string>
+    <string name="change_mpin">Change M-Pin</string>
+    <string name="old_pin">Enter Old M-Pin</string>
+    <string name="new_pin">Enter New M-Pin</string>
+    <string name="change_pin">Change M-Pin</string>
+    <string name="confirm_new_pin">Confirm New M-Pin</string>
+    <string name="set_imei">SET IMEI</string>
+    <string name="go_to_settings">Go to settings -></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="complaint_reg_history"><![CDATA[Complaint Registration & History]]></string>
+    <string name="work_allocation">Work Allocation</string>
+    <string name="work_reallocation">Work Reallocation</string>
+    <string name="work_completion">Work Completion</string>
+    <string name="disconection_meter">Disconnection Meter</string>
+    <string name="reconnection_meter">Reconnection Meter</string>
+
+    <string name="show">Show</string>
+    <string name="filter">Filter</string>
+    <string name="compliant_registration">Complaint Registration</string>
+    <string name="history">History</string>
+    <string name="search">Search</string>
+    <string name="search_by">Search By</string>
+    <string name="selectEmployee">Select Employee</string>
+    <string name="job_card">Job Card</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish_fwd_to_section">Finish/Fwd to Section</string>
+    <string name="fill_details">Fill Details</string>
+    <string name="date_amp_time"><![CDATA[Date & Time]]></string>
+    <string name="work_completion_date_amp_time"><![CDATA[Work Completion Date & Time]]></string>
+    <string name="remark">Remarks*</string>
+    <string name="remark_160_character">Remarks 160 character only</string>
+    <string name="proceed">Proceed</string>
+    <string name="pls_enter_otp_below">Please enter otp below</string>
+    <string name="otp">OTP</string>
+    <string name="submit_without_otp">Submit without OTP</string>
+    <string name="go_back">Go Back</string>
+    <string name="pls_enter_reason_for_with_out_otp">Please enter reason for without Otp</string>
+    <string name="reason">Reason</string>
+    <string name="new_connection_request">New Connection Request</string>
+    <string name="existing_connection_request">Existing Connection Request</string>
+    <string name="application_request">Application Request</string>
+    <string name="authentication_application"><![CDATA[Authentication & Application(CC)]]></string>
+    <string name="authentication_application_details"><![CDATA[Authentication & Application Details]]></string>
+    <string name="application_status">Application Status</string>
+    <string name="permanent_connection">Permanent Connection</string>
+    <string name="temporary_connection">Temporary Connection</string>
+    <string name="app_request_date">Application Request Date</string>
+    <string name="date">16-Mar-2019 11:41 AM</string>
+    <string name="next">NEXT</string>
+    <string name="first_name_mandatory">First Name*</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name_mandatory">Last Name</string>
+    <string name="connection_request">Connection Request</string>
+    <string name="select_options">Select Options</string>
+    <string name="consumer_details">Consumer Details</string>
+    <string name="connection_type">Connection Type</string>
+
+    <string name="no_of_application">No of Application</string>
+
+    <string name="landlord_owner_name">Landlord/Owner Name*</string>
+    <string name="owner_address">Address*</string>
+    <string name="owner_contact_number">Contact Number*</string>
+    <string name="connection_details">Connection Details</string>
+    <string name="_91">+91</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="sec_no">Secondary Mobile No</string>
+
+    <string name="mobile_no_mandatory">Mobile No.*</string>
+    <string name="land_line_no">Landline No.</string>
+    <string name="email">Email</string>
+    <string name="code">Code</string>
+    <string name="name_in_marathi">Name In Marathi</string>
+    <string name="only_indian_number_allowed">Only Indian Numbers are Allowed</string>
+    <string name="owner_info">Owner Info</string>
+    <string name="id_proof">ID Proof</string>
+    <string name="address_proof">Address Proof</string>
+    <string name="mandatory_documents">Mandatory Documents</string>
+    <string name="noc">NOC</string>
+    <string name="document_for_all_new_connections">Document for All New Connections</string>
+    <string name="page_1_of">Page 1 of</string>
+    <string name="_4">4</string>
+    <string name="site_address">Site Address</string>
+    <string name="addr_line_1">Addr. Line 1*</string>
+    <string name="addr_line_2">Addr. Line 2</string>
+    <string name="landmark">Landmark*</string>
+    <string name="taluka">Taluka</string>
+    <string name="pin_code">Pin code*</string>
+    <string name="address_in_marathi">Address In Marathi</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="same_as_site_above">Same as above</string>
+    <string name="consumer_area_details">Consumer Area Details</string>
+    <string name="near_by_consumer_no">Near By Consumer No*</string>
+    <string name="calculate_charges">Calculate Charges</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="app_fee">App. Fee</string>
+    <string name="connection_start_date">Connection Start Date*</string>
+    <string name="connection_end_date">Connection End Date*</string>
+    <string name="enter_days">Enter days*</string>
+    <string name="invalidate_number">Invalidate Number</string>
+    <string name="generate_demand">Generate Demand</string>
+    <string name="status_date">Status Date </string>
+    <string name="remarks">Remarks </string>
+    <string name="govt_emp">Govt. Emp </string>
+    <string name="source_type">Source</string>
+    <string name="meeting_date">Meeting Date </string>
+    <string name="auth_meeting_date">Meeting Date</string>
+    <string name="email_id">Email Id </string>
+    <string name="contact_no">Contact No</string>
+    <string name="status">Status </string>
+    <string name="applicant_name">Applicant Name :</string>
+    <string name="_15_mar_2019">15 Mar 2019</string>
+    <string name="_19_03_1_94">19/03/1/94</string>
+    <string name="application_type">Application Type</string>
+    <string name="connection_para_change">Connection Para. Change</string>
+    <string name="application">Application :</string>
+    <string name="single">Single</string>
+    <string name="no">NO</string>
+    <string name="sss">sss</string>
+    <string name="_9815465165">9815465165</string>
+    <string name="suez_gmail_com">suez@gmail.com</string>
+    <string name="d12_room_no_16_marol">D12 ROOM NO 16 MAROL POLICE CAM,MAROL POLICE CAMP,MAROL POLICE CAMP VIJAY NAGAR-400025</string>
+    <string name="mr_jaivant_sakharam">Mr. JAIVANT SAKHARAM</string>
+    <string name="_15_mar_2019_12_54_pm">15-Mar-2019 12:54 PM</string>
+    <string name="to_date">To Date:</string>
+    <string name="from_date">From Date:</string>
+    <string name="register">Register</string>
+    <string name="registerationPage">பதிவு</string>
+    <string name="device_register">Device registered successfully</string>
+    <string name="discon_date">Discon. Date</string>
+    <string name="arrear_rs">Arrear (Rs.)</string>
+    <string name="existing">Existing</string>
+    <string name="description">Description</string>
+    <string name="td_re_connection">TD RE-Connection</string>
+    <string name="reconn_charges">Reconn. Charges</string>
+    <string name="meter_Replacement">Meter Replacement Details</string>
+    <string name="meter_installation">Meter Installation</string>
+    <string name="app_date">App. Date</string>
+    <string name="clear">Clear</string>
+    <string name="attach_document">Attach Document</string>
+    <string name="new_name">New Name</string>
+    <string name="old_name">Old Name</string>
+    <string name="name_correction">Name Correction</string>
+    <string name="name_change">Name Change</string>
+    <string name="name_change_correction">Name Change/Correction</string>
+    <string name="new_">New</string>
+    <string name="consumer_no">Consumer No</string>
+    <string name="consumer_no_mandatory">Consumer No*</string>
+    <string name="complaint_no">Complaint No </string>
+    <string name="_12_03_19_45">12/03/19/45</string>
+    <string name="yashwant_nagar">YASHWANT NAGAR Coimbatore-415539 Coimbatore, Coimbatore, Tamil Nadu</string>
+    <string name="consumer_address">Consumer Address</string>
+    <string name="consumer_address_mandatory">Consumer Address*</string>
+    <string name="_8646357050">8646357050</string>
+    <string name="_111">111</string>
+    <string name="jaivant_sakharam_lad">JAIVANT SAKHARAM LAD</string>
+    <string name="technical_feasibility_plumber_work">Technical Feasibility/Plumber Work</string>
+    <string name="feasibility_plumberWork_details">Feasibility PlumberWork Details</string>
+    <string name="input">Input</string>
+    <string name="issue_meter_to_fixer">Issue Meter To Fixer</string>
+    <string name="mass_application_for_meter_installation">Mass Meter Installation</string>
+    <string name="store_management">Store Management</string>
+    <string name="meter_management_system">Meter Management System</string>
+
+    <string name="meter_no">Meter No</string>
+    <string name="meter_no_mandatory">Meter No*</string>
+    <string name="process_date">Process Date</string>
+    <string name="meter_details">Meter Details :</string>
+    <string name="note_meter_nos_are_automatically_adjusted_depending_on_the_initial">Note: Meter Nos. are automatically adjusted depending on the initial</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="make_code">Make Code</string>
+    <string name="save">Save</string>
+    <string name="accept_meter">Accept Meter</string>
+    <string name="authentication_date">Authentication Date</string>
+    <string name="authenticated_by">Authenticated By</string>
+    <string name="total_no_of_records">Total No Of Records : </string>
+    <string name="work_done_details">Work Done Details</string>
+    <string name="indicates_higher_priority">Indicates Higher Priority</string>
+    <string name="indicates_requests_rejected_from_meter_installation">Indicates Requests rejected from Meter Installation</string>
+    <string name="indicates_rejected_cases_re_forwarded_from_commercial">Indicates Rejected cases re-forwarded from Commercial.</string>
+    <string name="new_replace_meter">New/Replace Meter</string>
+    <string name="issue_date_mandatory">Issue Date *</string>
+    <string name="indicates_mandatory_fields">* indicates mandatory fields.</string>
+    <string name="from_date_mandatory">From Date *</string>
+    <string name="to_date_mandatory">To Date *</string>
+    <string name="name_amp_address"><![CDATA[Name & Address]]></string>
+
+    <string name="allocate">Allocate</string>
+    <string name="consumer_name">Consumer Name</string>
+    <string name="consumer_name_mandatory">Consumer Name*</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="zone">Zone</string>
+    <string name="zone_mand">Zone*</string>
+    <string name="group">Group</string>
+    <string name="group_mand">Group*</string>
+    <string name="bu">BU</string>
+    <string name="_1_central">1-Central</string>
+    <string name="_1_circle_1">1-Circle 1</string>
+    <string name="connection_size_inches">Connection size(Inches)</string>
+    <string name="tariff">Tariff</string>
+    <string name="_0_59">0.59</string>
+    <string name="selected_employees">Selected Employees</string>
+    <string name="water_charges">Water Charges</string>
+    <string name="category">Category</string>
+    <string name="_0">0</string>
+    <string name="amc">AMC</string>
+    <string name="meter_required">Meter Required</string>
+    <string name="yes">Yes</string>
+
+    <string name="upload_documents_right_now">Do you want to upload documents right now?</string>
+    <string name="new_connection">New Connection</string>
+    <string name="elint_water_utility_permanent_employees">ELINT WATER UTILITY PERMANENT EMPLOYEES</string>
+    <string name="contractor">CONTRACTOR</string>
+    <string name="application_date">Application Date &amp; Time</string>
+    <string name="commercial_feasibility">Commercial Feasibility</string>
+
+    <string name="authentication">Authentication</string>
+    <string name="total_available_stock">Total Available Stock :</string>
+
+    <string name="kruti_trived">Kruti Trived</string>
+    <string name="request_no">Request No</string>
+    <string name="road_cutting_required_in_running_mtr">Road cutting required (In running Mtr)</string>
+    <string name="boring_charges">Boring Charges* (₹)</string>
+    <string name="security_deposit">Security Deposit* (₹)</string>
+    <string name="new_pipeline_expenditure">New Pipeline Expenditure* (₹)</string>
+    <string name="visiting_charges">Visiting Charges* (₹)</string>
+    <string name="meter_cost">Meter Cost* (₹)</string>
+    <string name="road_type">Road Type*</string>
+    <string name="_1_bituminous_tar_per_mtr">1. Bituminous tar (Per Mtr.)</string>
+    <string name="_2_reinforce_cement_con_per_mtr">2. Reinforce cement con (Per Mtr.)</string>
+    <string name="_3_water_bound_macadam_per_mtr">3. Water bound macadam (Per Mtr.)</string>
+    <string name="job_total_amount">Total Amount(₹)</string>
+    <string name="calculate">Calculate</string>
+    <string name="accept_mmg_dept">Accept @MMG Dept</string>
+    <string name="meter_detail">Meter Detail</string>
+    <string name="dispatch_date">Dispatch Date</string>
+    <string name="meter_count">Meter Count</string>
+    <string name="issued_to_person">Issued To Person</string>
+    <string name="total">Total</string>
+
+    <string name="message">Message</string>
+
+    <string name="sr_no">Sr. No.</string>
+    <string name="accept_date">Accept Date*</string>
+    <string name="accepted_by">Accepted By*</string>
+    <string name="accept">Accept</string>
+    <string name="meter_installation_replacement">Meter Installation/Replacement</string>
+    <string name="remove_meter">Remove Meter</string>
+    <string name="service_type">Service</string>
+    <string name="Zone">Zone :</string>
+    <string name="Subzone">Subzone :</string>
+    <string name="issue_date">Issue Date :</string>
+    <string name="sequence">Sequence :</string>
+    <string name="walk_route">Walk Route :</string>
+    <string name="consumer_category">Consumer Category :</string>
+    <string name="meter_installed">Meter Installed ?</string>
+    <string name="forword_to_section">Forword To Section :</string>
+    <string name="installation_date">Installation Date :</string>
+    <string name="meter_reading_details">Meter Reading Details</string>
+    <string name="reference_no">Reference No. :</string>
+    <string name="fixer_name">Fixer Name :</string>
+    <string name="meter_not_installed_reason">Meter Not Installed Reason :</string>
+    <string name="new_meter_no">New Meter No. :</string>
+    <string name="old_meter_no">Old Meter No. :</string>
+    <string name="observation">Observation :</string>
+    <string name="select_observation">Select Observation </string>
+
+    <string name="request_subtype">Request SubType</string>
+    <string name="reading_entry">Reading Entry</string>
+    <string name="initial_reading">Initial Reading *</string>
+
+    <string name="defaulter_list">Defaulter List</string>
+    <string name="disconnection_order_list">Disconnection Order List</string>
+    <string name="capture_reason">Capture Reason</string>
+    <string name="notice_history">Notice History</string>
+    <string name="arrears_limit">Arrears Limit :</string>
+    <string name="from_mandatory">From *</string>
+    <string name="to_mandatory">To *</string>
+    <string name="notice_date">Notice Date</string>
+
+
+    <string name="check_all">Check All</string>
+    <string name="vigilance">VIGILANCE</string>
+    <string name="complaint_type">Complaint Type</string>
+    <string name="purpose_type">Purpose Type</string>
+    <string name="purpose">Purpose</string>
+    <string name="area">Area*</string>
+    <string name="informed_date">Informed Date*</string>
+    <string name="send_sms">Send SMS*</string>
+    <string name="last_bill_amount">Last Bill Amount</string>
+    <string name="arrear_amount">Arrear Amount</string>
+    <string name="pdf">Pdf</string>
+    <string name="pls_add_documents">Please add documents</string>
+    <string name="pls_select_document_from_below">Please select document from below</string>
+    <string name="pls_select_atleast_one_document_to_upload">Please select document to upload</string>
+    <string name="select_document">Select Documents</string>
+    <string name="documents">Documents</string>
+    <string name="imageType">Document Type Should be jpeg , jpg , png,pdf .</string>
+    <string name="ok">OK</string>
+    <string name="doc_size">Document size should be  below 200kb</string>
+    <string name="complaint_reg_date">Complaint Reg. Date :</string>
+    <string name="registered_complaints">Registered Complaints</string>
+    <string name="na">-NA-</string>
+    <string name="dispute_bill_month_year">Dispute Bill Month-Year</string>
+    <string name="coimbatore">Coimbatore</string>
+    <string name="_1_coimbatore">1-Coimbatore</string>
+    <string name="complaint_registered">Complaint registered</string>
+    <string name="domestic">Domestic</string>
+    <string name="work_allocation_date">Work Allocation Date</string>
+    <string name="illegal_connection">Illegal Connection</string>
+    <string name="complaint_sub_type">Sub Category</string>
+    <string name="wm_21_07_16_52">WM/21/07/16/52</string>
+    <string name="photo">Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="total_notice">Total Notice : </string>
+    <string name="printing_pending_notice">Printing Pending Notice : </string>
+    <string name="total_notice_count">Total Notice Count : </string>
+    <string name="total_notice_amount">Total Notice Amount :</string>
+    <string name="notice_date_">Notice Date : </string>
+    <string name="re_connection_work_allocation">Re - Connection Work Allocation</string>
+    <string name="re_connection_work_closing">Re - Connection Work Closing</string>
+    <string name="servive_no">Service No :</string>
+    <string name="service_tod_type">Service Tod Type</string>
+    <string name="request_type">Request Type :</string>
+    <string name="old_meter_type">Old Meter Type :</string>
+    <string name="new_meter_tod_type">New Meter TOD Type :</string>
+    <string name="old_meter_reading">Old Meter Reading :</string>
+    <string name="new_meter_init_reading">New Meter Init. Reading</string>
+    <string name="phase">Phase :</string>
+    <string name="meter_indication">Meter Indication : </string>
+    <string name="meter_installed_replacement_date">Meter Installed Replacement Date :</string>
+    <string name="meter_installed_replacement">Meter Installed Replaced?</string>
+    <string name="meter_not_installed_replaced_reason">Meter Not Installed/ Replaced Reason</string>
+
+    <string name="today_s_completed_work">Total Complaints</string>
+    <string name="pin_not_matched">Pin Not Matched</string>
+    <string name="application_no">Application No.</string>
+    <string name="work_complaint_location">Work Complaint Location</string>
+    <string name="consumer_no_">Consumer No :</string>
+    <string name="issue_to_fixer">Issue To Fixer</string>
+    <string name="forward_to_mmg_date">Fwd. To MMG Date</string>
+    <string name="reject_reason">Reject Reason</string>
+    <string name="click_on_reference_no_to_enter_meter_reading">Note : Click on reference no. to proceed.</string>
+    <string name="request_no_">Request No. :</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="zone_group">Zone - Group</string>
+    <string name="received">Received</string>
+    <string name="completed">Completed</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="pending">Pending</string>
+    <string name="dash">-</string>
+    <string name="application_no_mandatory">Application No.*</string>
+    <string name="reject">Reject</string>
+    <string name="complaint_no_">Complaint No</string>
+    <string name="complaint_work_allocation_date">Complaint Work Allocation Date</string>
+    <string name="complaint_date">Complaint Date Time</string>
+
+    <string name="action">Action</string>
+    <string name="complaint_origin">Origin</string>
+    <string name="search_for">Search For</string>
+
+    <string name="vendor">Vendor</string>
+    <string name="document_type">Document Type</string>
+    <string name="main_pipeline">Main Pipeline</string>
+    <string name="service_line">Service Line</string>
+
+    <string name="pc">PC</string>
+    <string name="district">District</string>
+    <string name="city_village">City/Village</string>
+    <string name="main_tariff">Main Tariff*</string>
+    <string name="area_type">Area Type*</string>
+    <string name="property">Property*</string>
+    <string name="vip_category">VIP Category</string>
+    <string name="existing_connection">Existing Connection*</string>
+    <string name="ownership">OwnerShip*</string>
+    <string name="section">Section</string>
+    <string name="utility">Utility</string>
+    <string name="select_area">Select Area</string>
+    <string name="priority">Priority</string>
+    <string name="complaint_for">Complaint For</string>
+    <string name="loading">Loading...</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="no_complaints">இந்த காலங்களுக்கு புகார்கள் இல்லை</string>
+    <string name="consumer_no_does_not_exist">Consumer number does not exist</string>
+    <string name="work_allocation_date_time"><![CDATA[Work Allocation(Date & Time)]]></string>
+    <string name="work_completion_date_time"><![CDATA[Work Completion(Date & Time)]]></string>
+    <string name="fault_man">FaultMan</string>
+    <string name="repeat_call">Repeat Call</string>
+    <string name="auto_allocate">Auto Allocate</string>
+    <string name="work_re_allocation_date_time">Work Re-Allocation (Date and Time)</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="re_allocate">Re-Allocate</string>
+    <string name="complaint_work_allocation_date_time">Complaint Work Allocation(Date and Time)</string>
+    <string name="location">Location</string>
+    <string name="something_went_wrong">Something went wrong, please try again later</string>
+    <string name="work_allocation_detailed">Work Allocation Detail</string>
+    <string name="work_reallocation_detail">Work Re-Allocation Detail</string>
+    <string name="work_completion_detail">Work Completion Detail</string>
+    <string name="select_at_least_one_employee_reallocate">Select at least one employee to reallocate work</string>
+    <string name="select_at_least_one_employee_allocate">Select at least one employee to allocate work</string>
+    <string name="master_data_missing">Master Data Missing</string>
+    <string name="download_master_data">Master data missing, Please download master data before doing further operations</string>
+    <string name="allocated_employee">Allocated Employee</string>
+    <string name="attended_by">Attended By</string>
+    <string name="permission_necessary">Permission necessary</string>
+    <string name="location_permission_is_necessary">Location permission is necessary</string>
+    <string name="permissionDenied">Permission denied</string>
+    <string name="turnOffMockLocation">Turn Off Mock Location</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout?</string>
+    <string name="work_allocated_successfully">Work allocated successfully</string>
+    <string name="work_reallocated_successfully">Work Re-allocated successfully</string>
+    <string name="work_completion_successfully">Complaint completed successfully</string>
+    <string name="invalid_otp">Wrong OTP</string>
+    <string name="work_rejected_successfully">Complaint rejected succesfully</string>
+
+    <array name="app_language">
+
+        <item>English</item>
+
+
+    </array>
+
+    <array name="areaSpinner">
+        <item>Select Area*</item>
+        <item>Kumbhar Gali</item>
+        <item>AMC</item>
+        <item>Phule Nagar</item>
+        <item>Ekta Nagar</item>
+        <item>GYMUK</item>
+    </array>
+
+    <array name="searchOptions">
+
+        <item>Consumer No</item>
+        <item>Name &amp; Address</item>
+        <item>Mobile No</item>
+        <item>Meter No</item>
+
+    </array>
+
+    <array name="utility">
+        <item>Utility</item>
+        <item>Yes</item>
+        <item>No</item>
+
+    </array>
+
+    <array name="complaint_origin">
+        <item>All</item>
+        <item>External</item>
+        <item>Internal</item>
+    </array>
+
+    <array name="complaintType">
+        <item>Complaint Type*</item>
+        <item>BILLING</item>
+        <item>LEAKAGE</item>
+        <item>METER RELATED</item>
+        <item>OTHERS</item>
+    </array>
+
+    <array name="complainSubType">
+        <item>Complaint SubType*</item>
+        <item>Pipe Leakage Major</item>
+        <item>Pipe Leakage Minor</item>
+        <item>Valve Leakage</item>
+    </array>
+
+    <array name="sourceType">
+        <item>Source Type*</item>
+        <item>Walk In</item>
+        <item>Mail</item>
+        <item>Telephonic</item>
+    </array>
+
+    <array name="complaintBy">
+        <item>Mr.</item>
+        <item>Miss.</item>
+        <item>Mrs.</item>
+    </array>
+
+    <array name="nameType">
+        <item>Mr.</item>
+        <item>Miss.</item>
+        <item>Mrs.</item>
+        <item>M/S.</item>
+    </array>
+
+    <array name="priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>Severe</item>
+    </array>
+
+    <array name="meterNo">
+        <item>a 5423601</item>
+
+    </array>
+
+    <array name="complaintFor">
+        <item>Area</item>
+        <item>Individual</item>
+    </array>
+    <array name="workZones">
+        <item>Zones</item>
+    </array>
+
+    <array name="workSubZones">
+        <item>Subzones</item>
+    </array>
+
+    <array name="workComplaintType">
+        <item>Complaint Type</item>
+    </array>
+
+    <array name="requestType">
+        <item>Request Type *</item>
+        <item>New Connection</item>
+        <item>Complaint</item>
+    </array>
+
+    <array name="workSubType">
+        <item>Sub Type</item>
+    </array>
+
+    <array name="finish">
+        <item>Finish</item>
+        <item>Bulk</item>
+        <item>Distribution</item>
+        <item>Reject</item>
+    </array>
+
+    <array name="observation">
+        <item>--Select--</item>
+        <item>Wrong Payment Mode</item>
+        <item>Wrong Payment Type</item>
+        <item>Payment Not Posted</item>
+        <item>Wrong Category</item>
+    </array>
+
+    <array name="mainTariff">
+        <item>Main Tariff*</item>
+        <item>Domestic</item>
+        <item>Commercial I</item>
+        <item>Commercial II</item>
+        <item>Commercial III</item>
+        <item>Commercial IV</item>
+    </array>
+
+    <array name="connSize">
+        <item>Connection Size</item>
+        <item>a0.59</item>
+        <item>a0.78</item>
+        <item>a0.98</item>
+        <item>a1.26</item>
+    </array>
+
+    <array name="areaType">
+        <item>Area Type*</item>
+        <item>Rural</item>
+        <item>Urban</item>
+    </array>
+
+    <array name="connectionSize">
+        <item>Connection Size (In Inch)*</item>
+        <item>a0.59</item>
+        <item>a0.78</item>
+        <item>a0.98</item>
+        <item>a1.26</item>
+    </array>
+
+    <array name="property">
+        <item>Property*</item>
+        <item>Bungalows</item>
+        <item>Apartment</item>
+        <item>Slum</item>
+        <item>Commercial</item>
+        <item>Semi Commercial</item>
+    </array>
+
+    <array name="vipCategory">
+        <item>VIP Category</item>
+        <item>Cinema Theaters</item>
+        <item>Community Halls</item>
+        <item>Edcationl</item>
+    </array>
+
+    <array name="govtEmp">
+        <item>Govt. Emp*</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+    <array name="meterInstalled">
+        <item>-----</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+    <array name="meternotInstalledReason">
+        <item>-----</item>
+        <item>She is Not ready</item>
+        <item>No</item>
+    </array>
+
+    <array name="existingConnection">
+        <item>Existing Connection*</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+    <array name="ownerShip">
+        <item>OwnerShip*</item>
+        <item>Owner</item>
+        <item>Tenant</item>
+    </array>
+
+    <array name="district">
+        <item>District*</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Thane</item>
+        <item>Navi Mumbai</item>
+    </array>
+
+    <array name="village">
+        <item>City/Village*</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Thane</item>
+        <item>Navi Mumbai</item>
+    </array>
+
+    <array name="zone">
+        <item>-- Select Zone --</item>
+        <item>Zone 1-1</item>
+        <item>Zone 2-2</item>
+        <item>Zone 3-3</item>
+        <item>Zone 4-4</item>
+        <item>Zone 5-5</item>
+    </array>
+
+    <array name="subZone">
+        <item>-- Select SubZone --</item>
+        <item>Zone 1-1</item>
+        <item>Zone 2-2</item>
+        <item>Zone 3-3</item>
+        <item>Zone 4-4</item>
+        <item>Zone 5-5</item>
+    </array>
+
+    <array name="selectEmp">
+        <item>-- Select Employee --</item>
+    </array>
+
+    <array name="searchBy">
+        <item>Search By</item>
+        <item>Application No.</item>
+        <item>Consumer No.</item>
+    </array>
+
+    <array name="action">
+        <item>Action</item>
+        <item>Accept</item>
+        <item>Reject</item>
+    </array>
+
+    <array name="reason">
+        <item>Reason</item>
+        <item>-- Select --</item>
+    </array>
+
+    <array name="application_type">
+        <item>Application Type</item>
+        <item>All</item>
+        <item>New Connection</item>
+        <item>Name Change</item>
+    </array>
+
+    <array name="proceed_to">
+        <item>Proceed To*</item>
+        <item>Technical Feasibility</item>
+        <item>Plumber Work</item>
+    </array>
+
+    <array name="fixer_name">
+        <item>Fixer Name*</item>
+        <item>E001</item>
+        <item>E002</item>
+    </array>
+
+    <array name="vendor">
+        <item>Vendor</item>
+        <item>E001</item>
+        <item>E002</item>
+    </array>
+
+    <array name="issue_meter_zone" tools:ignore="InconsistentArrays">
+        <item>Zone</item>
+        <item>All</item>
+        <item>1-Coimbatore</item>
+    </array>
+
+    <array name="request_type" tools:ignore="MissingDefaultResource">
+        <item>Request Type *</item>
+        <item>New Connection</item>
+        <item>Complaint</item>
+        <item>Existing Application</item>
+        <item>Temporary Connection</item>
+    </array>
+
+    <array name="issue_meter_source_type">
+        <item>Source Type</item>
+        <item>All</item>
+        <item>Call Center</item>
+        <item>Camp</item>
+    </array>
+
+    <array name="issue_meter_observation">
+        <item>Observation</item>
+        <item>All</item>
+
+    </array>
+
+    <array name="main_pipeline">
+        <item>Main Pipeline of Municipal Corporation*</item>
+        <item>-- Select --</item>
+    </array>
+
+    <array name="service_line">
+        <item>Service Line of Municipal Corporation*</item>
+        <item>-- Select --</item>
+    </array>
+
+
+    <array name="bu_defaulter">
+        <item>BU</item>
+        <item>All</item>
+    </array>
+
+    <array name="pc_defaulter">
+        <item>PC</item>
+        <item>All</item>
+    </array>
+
+    <array name="traffic">
+        <item>Traffic</item>
+        <item>All</item>
+        <item>Domestic</item>
+        <item>Commercial I</item>
+        <item>Commercial II</item>
+        <item>Commercial III</item>
+        <item>Commercial IV</item>
+    </array>
+
+    <array name="compl_sub_type">
+        <item>Complaint SubType</item>
+        <item>Advance Payment</item>
+        <item>Cheque Dishonored</item>
+        <item>Cheque Stop Payment Request</item>
+        <item>ALL</item>
+    </array>
+
+    <array name="document_type">
+        <item>--Select Document--</item>
+        <item>Driving License</item>
+        <item>Passport</item>
+        <item>Voter ID Card</item>
+        <item>Arm License</item>
+        <item>Income Tax PAN Card</item>
+    </array>
+
+    <array name="work_completion_observation">
+        <item>--Select--</item>
+    </array>
+    <string name="version">பதிப்பு : </string>
+    <string name="fingerprint_does_not_recognized">கைரேகை அங்கீகரிக்கப்படவில்லை</string>
+    <string name="emp_code_not_match">ஊழியர் குறியீடு பொருந்தவில்லை</string>
+    <string name="user_blocked">இந்த சாதனம் அங்கீகரிக்கப்படவில்லை</string>
+    <string name="complaint_viptagging">விஐபி</string>
+    <string name="accept_mmg_successfully">மீட்டர் வெற்றிகரமாக எம்.எம்.ஜி துறை ஏற்றுக்கொண்டது</string>
+    <string name="issuedTo_mmg_successfully">மீட்டர் மேலாண்மை குழு துறைக்கு மீட்டர் வெற்றிகரமாக வழங்கப்பட்டது</string>
+    <string name="get_Details">விவரங்களைப் பெறுங்கள்</string>
+
+    <string name="noConsumerComplaint">நுகர்வோர் புகார் இல்லை</string>
+    <string name="noNotification">எந்த அறிவிப்பும் கிடைக்கவில்லை</string>
+
+
+    <!--mmg-->
+    <string name="concrete_drain_dismantling_restore"><![CDATA[கான்கிரீட் வடிகால் அகற்றுதல் மற்றும் மீட்டமை]]></string>
+    <string name="ramp_r_r"><![CDATA[RAMP R&R*]]></string>
+    <string name="s_s_m_r_r"><![CDATA[S S M,R&R*]]></string>
+    <string name="ccg_cutting_restor"><![CDATA[CCG Cutting & Restor*]]></string>
+    <string name="fc_restoration_with_cement_mortar"><![CDATA[FC&Restoration With Cement Mortar*]]></string>
+    <string name="cg_restro"><![CDATA[CG&Restro*]]></string>
+    <string name="d_r_of_burnt_brick"><![CDATA[D&R of Burnt Brick*]]></string>
+    <array name="saddlePitExcav">
+        <item>-- Select --</item>
+        <item>SOIL</item>
+        <item>DIR</item>
+        <item>HR</item>
+    </array>
+    <array name="cgRestro">
+        <item>-- Select --</item>
+        <item>P</item>
+        <item>W</item>
+        <item>SI</item>
+        <item>O</item>
+    </array>
+    <array name="fcRestrowhcmtMtr">
+        <item>-- Select --</item>
+        <item>Tiles</item>
+        <item>CC</item>
+        <item>Mosaic</item>
+        <item>Others</item>
+    </array>
+
+        <array name="removdMaterialHandovr">
+        <item>--Select--</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <array name="array_rampRandR">
+        <item>-- Select --</item>
+        <item>Stone</item>
+        <item>CCO</item>
+    </array>
+    <array name="array_wBoring">
+        <item>-- Select --</item>
+        <item>S</item>
+        <item>B</item>
+        <item>CC</item>
+    </array>
+    <array name="mmg_protectedBox">
+        <item>--Select--</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <array name="mmg_searchBy">
+        <item>--Select--</item>
+        <item>Consumer No</item>
+        <!--<item>Assessee No</item>
+        <item>Property Id</item>
+        <item>GIS Id</item>-->          <!--Commented by Ashwini by taking reference from web portal 23-12-2019-->
+    </array>
+    <string name="please_type_the_verification_code_sent_to_n_9xxxxxxx19">Enter the OTP sent to</string>
+    <string name="type_of_roadcutting">சாலை வெட்டுதல் வகை</string>
+    <string name="select_saddle_pit_excav">Select Saddle Pit Excav</string>
+    <string name="select_pe_pipe_trn_excav">Select Pe Pipe Trn Excav</string>
+    <string name="select_ramp_rr">Select RAMP RR</string>
+    <string name="select_w_boring">Select W Boring</string>
+    <string name="select_cg_restro">Select CG Restro</string>
+    <string name="select_fc_restoration_with_cement_mortal">Select FC Restoration With Cement Mortal</string>
+    <string name="mandatory">*</string>
+    <string name="enter_mobile_number">Please Enter Mobile Number</string>
+    <string name="invalid_mobile_no">Invalid Mobile Number</string>
+    <string name="failure">Not Upload</string>
+    <string name="request_submitted">Image Uploaded Successfully.....</string>
+    <string name="meter_make">Meter Make</string>
+    <string name="size_of_meter">Size of Meter</string>
+    <string name="meter_status">Meter Status</string>
+    <string name="final_status">Final Status</string>
+    <string name="meter_observation">Observation*</string>
+    <string name="type_of_meter">Type of Meter</string>
+    <string name="reason_for_replacement">Reason for Replacement*</string>
+    <string name="seal_no">Seal No</string>
+    <string name="property_assessement">Property assessment</string>
+    <string name="msr">MSR</string>
+    <string name="sr">SR</string>
+    <string name="dma">DMA</string>
+    <string name="request">Request</string>
+    <string name="previous_Reading">Previous Reading*</string>
+    <string name="final_reading">Final Reading*</string>
+    <string name="meter_make_mandatory">Meter Make*</string>
+    <string name="vendor_code">Vendor Code*</string>
+    <string name="old_meter">Old Meter</string>
+    <string name="consumer">Consumer</string>
+    <string name="average_consumption">Average Consump tion*</string>
+    <string name="new_meter">New Meter</string>
+    <string name="material">Material</string>
+    <string name="civil_measurement">Civil Measurement</string>
+    <string name="meter_protection">Meter Protection</string>
+    <string name="type_of_work">Type of Work</string>
+    <string name="type_of_area">Type of Area</string>
+    <string name="view_contractor_details">Saved Details By Plumber</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="utility_name">Suez</string>
+    <string name="fixer">Fixer</string>
+    <string name="not_registered_click_here">பதிவு செய்யப்படவில்லை? இங்கே கிளிக் செய்க ..</string>
+    <string name="device_not_authorized">Device Not Authorized</string>
+    <string name="please_select_req_type">Please select Request Type.</string>
+    <string name="please_select_zone">Please select Zone.</string>
+    <string name="please_select_fromdate">From Date should not be empty.</string>
+    <string name="please_select_todate">To Date should not be empty.</string>
+    <string name="you_have_no_role_rights">You Have No Role Rights assigned to login into the app.</string>
+    <string name="new_pin_cannot_be_same_as_old_pin">New pin cannot be same as Old pin</string>
+    <string name="hi">Hi!</string>
+    <string name="details_submitted_successfully">Details submitted succesfully</string>
+    <string name="This_meter_Was_already_assigned_with">This meter Was already assigned with HSC:</string>
+    <string name="details_not_submitted_this_fixer_unavailable">Details are not Submitted.\nThis Meter is not available at fixer.</string>
+    <string name="details_not_submitted">Details are not submitted.</string>
+    <string name="meter_available_in_our_system">This meter is available in our system, you cannot use this.</string>
+    <string name="save_and_exit"><![CDATA[Save & Exit]]></string>
+    <string name="date_of_installation">Date of Installation</string>
+    <string name="alert">Alert</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit</string>
+    <string name="upload_all_documents">Upload All Documents</string>
+    <string name="allocated_work">Allocated Work</string>
+    <string name="please_forward_complaint_to_mmg">Please forward complaint to MMG because meter related complaint is already pending</string>
+    <string name="aging">Aging</string>
+    <string name="sla_status">SLA Status</string>
+    <string name="please_select_action">Please select action</string>
+    <string name="select">--Select--</string>
+    <string name="bill_adjust_type">Bill Adjust Type</string>
+    <string name="adjust_period_from">Adjust Period From</string>
+    <string name="adjust_period_to">Adjust Period To</string>
+    <string name="correct_reading">Correct Reading *</string>
+    <string name="correct_reading_date">Correct Reading Date</string>
+    <string name="select_correct_reading_meter_status">Select Correct Reading Meter Status</string>
+    <string name="select_correct_reading_reader_observation">Select Correct Reading Reader Observation</string>
+    <string name="select_new_tariff">Select New Tariff</string>
+    <string name="tariff_change_from_date">Tariff Change From Date</string>
+    <string name="tariff_change_to_date">Tariff Change To Date</string>
+    <string name="receipt_number">Receipt Number *</string>
+    <string name="swapped_consumer">Swapped Consumer *</string>
+    <string name="removal_reading_of_complaintent_consumer">Removal Reading of Complaintent Consumer</string>
+    <string name="removal_reading_of_swapped_consumer">Removal reading of Swapped consumer</string>
+    <string name="removal_date">Removal Date</string>
+    <string name="please_enter_remark">Please enter remark</string>
+    <string name="please_select_request_type">Please select request type</string>
+    <string name="please_select_fixer_name">Please select fixer name</string>
+    <string name="work_status">Work Status</string>
+    <string name="department_authorization">You don\'t belong from MRBD department</string>
+    <string name="device_authorization">This device is not authorized ! Please contact Admin</string>
+    <string name="billing_adjustment_on_process">Billing adjustment on process</string>
+    <string name="billing_adjustment_process_failed">Billing adjustment process failed</string>
+    <string name="allocation_date">Allocation Date :</string>
+    <string name="connection_managment">Connection Management</string>
+    <string name="new_connection_registration">New Connection Request</string>
+    <string name="new_connection_status">Application Status</string>
+    <string name="appointment_fix">Fix Appointment</string>
+    <string name="site_visit_list">Site Visit List</string>
+    <string name="site_visit_list_details">Site Visit List Details</string>
+    <string name="application_number">Application Number</string>
+    <string name="address">Address</string>
+    <string name="appointment_date">Appointment Date &amp; Time</string>
+    <string name="ward">Ward</string>
+    <string name="connection_size_mm">Connection Size (mm)</string>
+    <string name="connection">Connection</string>
+    <string name="technical_feasibility">Technical Feasibility</string>
+    <string name="consumer_index">Consumer Index</string>
+    <string name="connection_category">Connection Category</string>
+    <string name="property_type">Property Type</string>
+    <string name="connection_purpose">Connection Purpose</string>
+    <string name="no_of_floor">No of Floor</string>
+    <string name="population">Population</string>
+    <string name="no_of_flats">No of flats</string>
+    <string name="Rainwater">Rainwater harv.</string>
+    <string name="Bore">Bore Well</string>
+    <string name="Operational">Is Operational.</string>
+
+
+    <string name="no_of_dwellling">No of Dwelling</string>
+    <string name="no_of_beds">No. of Beds/Rooms/Seats</string>
+    <string name="unauthorized_connection">UnAuthorized Connection</string>
+    <string name="civil_cons_with_ccmc_water">Civil Cons. with CCMC Water</string>
+    <string name="no_of_dwelling_units">No. of dwelling Units</string>
+    <string name="is_occupier_security">Is occupier Security</string>
+    <string name="government_employee">Government Employee</string>
+    <string name="distance_network_line_size">Distance Network Line Size</string>
+    <string name="road_restoration_length">Road Restoration Length</string>
+    <string name="select_name">Name</string>
+    <string name="lot">LOT</string>
+    <string name="road_ownership">Road Ownership</string>
+    <string name="meter_section_type">Meter Section Type</string>
+    <string name="site_observation">Site Observation</string>
+    <string name="select_salutation">Select Salutation</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="please_enter_landmark">Please enter landmark</string>
+    <string name="please_enter_street_locality">Please enter street locality</string>
+    <string name="please_enter_district">Please enter district</string>
+    <string name="please_enter_city_village">Please enter city / village</string>
+    <string name="please_enter_postal_code">Please enter postal code</string>
+    <string name="please_enter_mobile_no">Please enter mobile no</string>
+    <string name="please_enter_landline_no">Please enter landline no</string>
+    <string name="please_enter_email">Please enter email id</string>
+    <string name="please_select_connection_category">Please select connection category</string>
+    <string name="please_select_property_type">Please select property type</string>
+    <string name="please_select_connection_purpose">Please select connection purpose</string>
+    <string name="please_enter_number_of_floors">Please enter number of floors</string>
+    <string name="please_enter_number_population">Please enter number population</string>
+    <string name="please_enter_number_of_beds">Please enter number of beds</string>
+    <string name="please_select_unauthorized_connection">Please select unauthorized connection</string>
+    <string name="please_select_civil_cons_with_ccmc_water">Please select civil cons with CCMC water</string>
+    <string name="please_select_no_of_dwelling_unit">Please select no of dwelling unit</string>
+    <string name="please_enter_is_occupier_security">Please enter is occupier security</string>
+    <string name="please_select_government_employee">Please select government employee</string>
+    <string name="please_enter_unit">Please enter unit</string>
+    <string name="please_select_technical_feasibility">Please select technical feasibility</string>
+    <string name="please_select_distance_network_line_size">Please select distance network line size</string>
+    <string name="please_select_road_restoration_length">Please select road restoration length</string>
+    <string name="please_enter_road_owner_ship">Please select road ownership</string>
+    <string name="please_select_meter_sanction_type">Please select meter sanction type</string>
+    <string name="please_select_ward">Please select ward</string>
+    <string name="please_select_msr">Please select MSR</string>
+    <string name="please_select_sr">Please select sr</string>
+    <string name="please_select_group">Please select group</string>
+    <string name="please_select_area">Please select area</string>
+    <string name="please_select_road_type">Please select road type</string>
+    <string name="please_select_floor">Please select no. of floor</string>
+    <string name="length">Length</string>
+    <string name="verification_code">Verify OTP for site visit</string>
+    <string name="checking_receipt">Checking receipt</string>
+    <string name="please_enter_number_of_rooms">Please enter number of rooms</string>
+    <string name="completed_work">Completed Work</string>
+    <string name="unique_id">Unique Id : </string>
+    <string name="download_master_data_completed">Download master data completed</string>
+    <string name="pending_for_authentication">Pending for authentication</string>
+    <string name="authenticated_work">Authenticated Work</string>
+    <string name="backup_data">Back up</string>
+    <string name="file_exported_to">File exported to :</string>
+    <string name="name_of_the_fixer">Name of the Plumber *</string>
+    <string name="information">Information</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="cswoff">C/o, S/o, W/o</string>
+
+    <string name="allready_register">already registered, You can give Repeat Call.</string>
+    <string name="fixer_allocation">Fixer Allocation</string>
+    <string name="document_uploading">Document uploading...</string>
+    <string name="digital_signature_uploaded_successfully">Digital signature uploaded successfully</string>
+    <string name="connection_feasibility">Connection feasibility</string>
+    <string name="distribution_pipeline">Distribution pipeline size(MM)</string>
+    <string name="water_availability_in_dp">Water Availability in DP</string>
+    <string name="distribution_id">Distribution ID</string>
+    <string name="road_cutting_required">Road Cutting Required</string>
+    <string name="road_length">Road Length (in Meter)</string>
+    <string name="left_customer">Left Customer</string>
+    <string name="right_customer">Right Customer</string>
+    <string name="construction_completed">Construction Completed</string>
+    <string name="any_existing_connection_in_building_property">Any Existing connection in building /Property</string>
+    <string name="floor_number">Floor Number</string>
+    <string name="no_of_connections" />
+    <string name="applied_dwelling_unit_has_no_connection">Applied Dwelling unit has connection?</string>
+    <string name="connection_size">Connection Size</string>
+    <string name="storage_capacity">Storage Capacity</string>
+    <string name="internal_network_available">Internal Network Available</string>
+    <string name="disposal_of_water_available">Disposal of Water Available</string>
+    <string name="rainwater_harvesting_system_available">Rainwater harvesting system Available</string>
+    <string name="meter_size">Meter Size</string>
+    <string name="please_enter_consumer_number">Please enter consumer number</string>
+    <string name="please_enter_floor_number">Please enter floor number</string>
+    <string name="please_enter_left_consumer_number">Please enter left consumer number</string>
+    <string name="please_enter_right_consumer_number">Please enter right consumer number</string>
+    <string name="valid">Valid</string>
+    <string name="invalid">Invalid</string>
+    <string name="please_select_connection_size">Please select connection size</string>
+    <string name="please_select_meter_size">Please select meter size</string>
+    <string name="please_select_storage_capacity">Please select storage capacity</string>
+    <string name="please_enter_distribution_pipeline">Please enter distribution pipeline</string>
+    <string name="please_enter_distribution_id">Please enter distribution pipe id</string>
+    <string name="please_enter_road_length_id">Please enter road length id</string>
+    <string name="storage_capacity_type">Storage capacity type</string>
+    <string name="litter">Litter</string>
+    <string name="please_enter_storage_capacity">Please enter storage capacity</string>
+    <string name="meter_location">Meter Location</string>
+    <string name="please_enter_meter_location">Please enter meter location</string>
+    <string name="customer_name">Customer Number</string>
+    <string name="gis_bid">Building ID</string>
+    <string name="valid_consumer">Valid Consumer</string>
+    <string name="meter_installation_date">Meter Installation Date</string>
+    <string name="last_saved_date">Last saved date</string>
+    <string name="submission_date">Submission date</string>
+    <string name="submitting">Submitting</string>
+    <string name="notification_message">You Have No New Messages....</string>
+    <string name="notification">Notification</string>
+    <string name="salutation">Salutation</string>
+    <string name="select_care_off">Select C/o S/o W/o</string>
+    <string name="please_enter_your_employee_id">Please enter your employee Id</string>
+    <string name="building_id_not_valid">Building id not valid</string>
+    <string name="seal_make_mandatory">Seal Make *</string>
+    <string name="removed_meter_handed_over_to_consumer">Removed Meter Handed over to Consumer*</string>
+    <string name="sub_category">SubCategory</string>
+    <string name="are_you_sure_want_to_submit">Are you Sure, You wants to Submit</string>
+    <string name="whats_app">Whats app number</string>
+    <string name="total_complaints">Total Complaints</string>
+    <string name="complaint_dashboard">Dashboard</string>
+    <string name="work_allocated">Work Allocated</string>
+    <string name="all">All</string>
+    <string name="monthly">Monthly</string>
+    <string name="today">Today</string>
+    <string name="consumer_no_gisbid">Consumer No / GIS BID</string>
+    <string name="sequence_id">Seq. Id</string>
+    <string name="consumer_detail">Consumer Detail</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="bill_reading_month">Bill Month :</string>
+    <string name="upload_meter_photo">Upload Meter Photo</string>
+    <string name="reading_data">Reading Data</string>
+    <string name="past_meter_reading">Past Meter Reading</string>
+    <string name="current_reading_date">Current Reading Date</string>
+    <string name="past_meter_reading_date">Past Meter Reading Date</string>
+
+
+    <string name="update_mobile_no">Update Mobile No (*)</string>
+    <string name="consumerAddress">Address :</string>
+    <string name="building_id">Building ID :</string>
+    <string name="property_assessment_number">Property Assessment No :</string>
+    <string name="upload_optional_photo">Upload Optional Photo</string>
+    <string name="new_meter_number">New Meter Number (*)</string>
+    <string name="meter_reading">Meter Reading</string>
+    <string name="meter_consumption_consumer">Meter Consumption :</string>
+    <string name="past_meter_consumption">Past Meter Consumption</string>
+    <string name="_90">90</string>
+    <string name="update_mobile_number">Update Mobile Number (*)</string>
+
+
+    <string name="is_seal_broken_not_available">Is seal broken / Not available?</string>
+    <string name="is_meter_tempered">Is meter tempered?</string>
+    <string name="required_meter_shifting">Required meter shifting</string>
+    <string name="is_any_violation_tariff">Is any violation tariff?</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="leakage_in_meter_fitting">Leakage in Meter fitting</string>
+    <string name="ball_valve_replacement">Ball Valve Replacement</string>
+    <string name="overflow_of_water">Overflow of water</string>
+    <string name="consumer_abused_manhandle">Consumer abused/Manhandle</string>
+    <string name="meter_by_pass">Meter bypass</string>
+    <string name="reader_remark">Reader Remark</string>
+    <string name="submit_reading">Submit Report</string>
+    <string name="consumer_reading">Reading</string>
+    <string name="select_meter_status">Select Status</string>
+    <string name="select_meter_observation">Select Observation</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="Please_enter_meter_location">Please enter meter location</string>
+    <string name="meter_status_mandatory">Please Select Meter Status</string>
+    <string name="meter_observation_mandatory">Please Select Meter Observation </string>
+    <string name="consumer_search">Consumer Search</string>
+    <string name="consumer_doesnot_exist">Consumer does not exist</string>
+    <string name="meter_photo_mandatory">Meter Photo Mandatory</string>
+    <string name="Please_enter_meter_reading">Please enter meter reading</string>
+    <string name="please_enter_new_meter_number">Please enter new meter number</string>
+    <string name="permissionNecessary">Permission necessary</string>
+    <string name="locationPermissionIsNecessaryGivePermissionFromSetting">Location permission is necessary,give permission from settings</string>
+    <string name="meter_consumption_negative">Negative consumption not allowed</string>
+    <string name="please_enter_meter_reading">Please enter meter reading</string>
+    <string name="capture_reading">Capture Reading</string>
+    <string name="reading_submit_successfully">"Reading submitted successfully."</string>
+    <string name="last_action">Last Action</string>
+    <string name="complaint_history">Service History</string>
+    <string name="tracking">Tracking</string>
+    <string name="history_tracking">History Tracking</string>
+    <string name="complaint_by">Complaint By</string>
+    <string name="negative_meter_reading_desc">Consumption is negative,\nAre you sure you want to submit?</string>
+    <string name="negative_meter_reading">Negative Consumption</string>
+    <string name="building_id_valid">Building Id is valid</string>
+    <string name="are_you_sure_want_to_submit_message">Are you Sure,You wants to Submit</string>
+    <string name="please_enter_valid_sms_number">Please enter valid SMS number</string>
+    <string name="please_select_reject_type">Please select reject type</string>
+    <string name="please_select_reason_type">Please reason type</string>
+    <string name="internal_audit_report">Internal Audit Report</string>
+    <string name="internal_audit_activity">Internal Audit Activity</string>
+    <string name="internal_audit_activity_report">Internal Network Report</string>
+    <string name="complaint_application_no">Compl/App. No. *</string>
+    <string name="name_of_consumner">Name of consumner</string>
+    <string name="testing_fee_receipt_no">Testing Fee Receipt No</string>
+    <string name="meter_received_in_mtl_on">Meter Received in MTL On</string>
+    <string name="meter_received_by">Meter Received By</string>
+    <string name="meter_serial_no">Meter Serial No</string>
+    <string name="meter_seal_no">Meter Seal No</string>
+    <string name="size">Size</string>
+    <string name="meter_tested">Meter Tested *</string>
+    <string name="test_results">Test Results *</string>
+    <string name="meter_reading_mandatory">Meter Reading *</string>
+    <string name="seal_status">Seal Status</string>
+    <string name="overhead_tank_condition">Overhead Tank Condition</string>
+    <string name="suction_pump_condition">Suction Pump Condition</string>
+    <string name="ug_sump_condition">UG Sump Condition</string>
+    <string name="leak_found_after_meter">Leak found after Meter?</string>
+    <string name="leak_found_inside_house">Leak found inside House</string>
+    <string name="floating_valve_available">Floating Valve Available?</string>
+    <string name="details_of_observation">Details of Observations</string>
+    <string name="recomondations_to_customer">Recomondations to Customer</string>
+    <string name="storage_type">Storage Type</string>
+    <string name="nos">Nos</string>
+    <string name="capacity">Capacity</string>
+    <string name="overhead_tank">Overhead Tank</string>
+    <string name="ground_tank">Ground Tank</string>
+    <string name="under_ground_sump">Under Ground Sump</string>
+    <string name="grand_total">Grand Total</string>
+
+    <array name="meter_status">
+        <item>0-METER OVERFLOW</item>
+        <item>1-NORMAL METER</item>
+        <item>2-LOCKED METER</item>
+        <item>3-FAULTY METER</item>
+        <item>4-METER CHANGE</item>
+        <item>5-METER INACCESSIBLE</item>
+        <item>6-READING NOT AVAILABLE</item>
+        <item>7-READING NOT TAKEN</item>
+        <item>8-METER MISSING</item>
+    </array>
+
+    <array name="reader_observation">
+        <item>1-Meter Normal</item>
+        <item>2-Meter Stopped</item>
+        <item>3-Meter Burnt</item>
+        <item>--Select Observation--</item>
+    </array>
+    <array name="selectArray">
+        <item>--Select--</item>
+    </array>
+
+
+    <!--    Shnatanu-->
+    <string name="collection_managment">சேகரிப்பு மேலாண்மை</string>
+    <string name="make_payment">பணம் கட்டு</string>
+
+</resources>

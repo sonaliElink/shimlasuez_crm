@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.6"
+                        android:gravity="start"
+                        android:paddingLeft="5dp"
+                        android:text="Consumer Details"
+                        android:textColor="#86000000" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_close"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.4"
+                        android:background="@drawable/roundcorner"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_close_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:paddingLeft="10dp"
+                            android:text="CLOSE"
+                            android:textColor="#FFF"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioComm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="#8bc34a"
+                            android:checked="false"
+                            android:text="Commissioned Area" />
+
+                        <RadioButton
+                            android:id="@+id/radioNonComm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="#8bc34a"
+                            android:checked="false"
+                            android:text="Non-Commissioned Area" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_15_dp"
+                        android:layout_marginRight="@dimen/common_15_dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.2dp"
+                            android:layout_marginTop="15dp"
+
+                            android:background="#28000000" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rb_old_hsc_meter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/tv_old_hsc_meter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="OLD CONNECTION &amp; METER"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rb_old_hsc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_old_hsc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="OLD CONNECTION "
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rb_new_hsc_meter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_new_hsc_meter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="NEW CONNECTION  &amp; METER"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rb_only_meter_replacement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_only_meter_replacement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="ONLY METER REPLACEMENT"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rb_td_reconnection"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_td_reconnection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="TD RECONNECTION"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <RadioButton
+                                    android:id="@+id/rb_only_seal_replacement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_only_seal_replacement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="ONLY SEAL REPLACEMENT"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <RadioButton
+                                    android:id="@+id/rb_only_meter_box_replacement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/common_15_dp"
+                                    android:layout_marginRight="0sp"
+                                    android:button="@null"
+                                    android:drawableRight="@drawable/radio_button_selector"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_only_meter_box_replacement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="@dimen/common_15_dp"
+                                    android:text="ONLY METER BOX REPLACEMENT"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:background="#28000000" />
+
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.6"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:text="Search By*"
+                            android:textColor="#86000000" />
+
+                        <Spinner
+                            android:id="@+id/searchBySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_weight="1.4"
+                            android:entries="@array/mmg_searchBy"
+                            android:spinnerMode="dialog"
+                            app:errorEnabled="true" />
+
+
+                        <EditText
+                            android:id="@+id/et_consumer_account_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity=""
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.6"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:text="NSC Appl./Complaint No:*"
+                            android:textColor="#86000000" />
+
+                        <EditText
+                            android:id="@+id/et_nsc_application_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity=""
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text=""
+
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_consumer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/get_Details"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

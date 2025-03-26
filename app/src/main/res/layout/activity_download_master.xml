@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ConnectionManagement.activity.SiteVisitListVerficationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/common_10_dp"
+        android:layout_marginTop="30dp"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_toolbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center_vertical"
+            android:text="Master Data "
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="@dimen/common_10_dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_16_dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comaplient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            android:transitionName="imageMain"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="download.json"
+            android:layout_marginBottom="@dimen/common_10_dp"
+            app:lottie_loop="true" />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_50_dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/common_7_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start|center_vertical"
+                android:text="Complaint Data "
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_16_dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:text="Complaint type data downloaded for registration "
+                android:textColor="@color/white"
+                android:lines="2"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/common_10_dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+
+            >
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:tint="@color/white"
+                android:transitionName="imageMain"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="download.json"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                app:lottie_loop="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="@dimen/common_7_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pinTwoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start|center_vertical"
+                    android:text="Master Data "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_16_dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:text="Master data downloaded for CRM app "
+                    android:textColor="@color/white"
+                    android:lines="2"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_master_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20_dp"
+        android:layout_marginTop="@dimen/common_200_dp"
+        android:layout_marginRight="@dimen/common_20_dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/green_700"
+        android:padding="12dp"
+        android:text="Master Download"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

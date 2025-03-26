@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:inputType="phone"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/text_view_border"
+        android:hint="Mobile Number" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/text_view_border"
+        android:src="@android:drawable/ic_menu_send"/>
+    </LinearLayout>
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:background="@drawable/text_view_border"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:maxLength="4"
+        android:hint="Password"/>
+</LinearLayout>

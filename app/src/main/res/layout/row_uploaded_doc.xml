@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/primaryText"
+        android:textSize="16sp"
+        tools:text="Name" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/deleteImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:foregroundGravity="center"
+        android:tint="@color/red"
+        app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/deleteImageView"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider" />
+
+</RelativeLayout>
+
