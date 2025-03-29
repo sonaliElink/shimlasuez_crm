@@ -165,10 +165,10 @@ public class ConnectionManagementFragment extends Fragment implements View.OnCli
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

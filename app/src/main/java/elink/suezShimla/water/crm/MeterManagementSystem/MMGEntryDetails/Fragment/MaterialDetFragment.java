@@ -226,10 +226,10 @@ public class MaterialDetFragment extends Fragment implements MaterialAdapter.Row
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        }/* else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

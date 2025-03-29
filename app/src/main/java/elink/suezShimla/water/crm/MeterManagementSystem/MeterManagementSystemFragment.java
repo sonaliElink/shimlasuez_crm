@@ -463,10 +463,10 @@ public class MeterManagementSystemFragment extends Fragment implements View.OnCl
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

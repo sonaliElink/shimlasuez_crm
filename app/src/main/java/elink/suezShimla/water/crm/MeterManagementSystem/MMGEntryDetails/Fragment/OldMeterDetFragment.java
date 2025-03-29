@@ -189,11 +189,11 @@ public class OldMeterDetFragment extends Fragment implements View.OnClickListene
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
         }
-
+*/
     }
     private Date dateParsing(String dtStart) {
         Date date = null;

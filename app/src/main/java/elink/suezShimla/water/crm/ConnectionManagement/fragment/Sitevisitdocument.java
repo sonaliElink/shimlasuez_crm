@@ -342,10 +342,10 @@ public class Sitevisitdocument extends Fragment implements GoogleApiClient.Conne
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

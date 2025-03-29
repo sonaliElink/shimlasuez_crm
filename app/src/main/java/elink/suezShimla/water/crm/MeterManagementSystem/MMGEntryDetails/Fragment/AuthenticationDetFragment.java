@@ -530,10 +530,10 @@ public class AuthenticationDetFragment extends Fragment implements GoogleApiClie
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
            timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

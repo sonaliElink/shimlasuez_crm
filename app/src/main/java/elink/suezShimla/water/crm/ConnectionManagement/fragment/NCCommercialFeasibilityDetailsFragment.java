@@ -188,10 +188,10 @@ public class NCCommercialFeasibilityDetailsFragment extends Fragment implements 
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

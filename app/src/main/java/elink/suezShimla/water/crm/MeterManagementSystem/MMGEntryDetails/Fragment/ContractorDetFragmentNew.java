@@ -201,10 +201,10 @@ public class ContractorDetFragmentNew extends Fragment implements View.OnClickLi
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

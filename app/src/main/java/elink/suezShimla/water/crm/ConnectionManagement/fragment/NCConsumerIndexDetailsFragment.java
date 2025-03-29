@@ -155,10 +155,10 @@ public class NCConsumerIndexDetailsFragment extends Fragment implements Material
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
            timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

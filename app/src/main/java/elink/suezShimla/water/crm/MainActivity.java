@@ -119,6 +119,7 @@ public class MainActivity extends SessionActivity implements NavigationView.OnNa
     MaterialDialog mmgMasterProgress, hscMasterProgress;
     private ConnectionDetector connection;
     private Invoke invServices;
+
     private Gson gson;
 
     MMGTypeOfRoadcuttingModel mmgTypeOfRoadcuttingModel;

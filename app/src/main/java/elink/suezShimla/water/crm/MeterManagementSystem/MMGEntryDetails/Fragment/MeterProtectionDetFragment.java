@@ -265,10 +265,10 @@ public class MeterProtectionDetFragment extends Fragment implements View.OnClick
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

@@ -223,7 +223,7 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
     private byte[] IV = new byte[16];
     private SecureRandom random;
     AesAlgorithm aes;
-
+    String getpipe,getsewerage,getconsumerlist;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -247,7 +247,10 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
 
         locationManager = (LocationManager)getActivity().getSystemService(Context.LOCATION_SERVICE);
 
-
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+         getpipe = preferences.getString("pipe", "");
+         getsewerage = preferences.getString("seweragep", "");
+         getconsumerlist = preferences.getString("adconsumer", "");
         // sFather = model.getFATHERNAME();
        /* if (sFather.equalsIgnoreCase("")) {
             sFather = "ABC";
@@ -370,10 +373,10 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {
@@ -1194,7 +1197,7 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
     }
 
     private void UpdateSiteVisitData() {
-        String params[] = new String[71];
+        String params[] = new String[74];
         String newapptype="";
       /*  if (applitype.equalsIgnoreCase("Single")) {
             //newapptype= appno;
@@ -1289,7 +1292,9 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
         params[68] = "0";// newapptype;
         params[69] = "1";// appno;
         params[70] = govValue;
-
+        params[71] = getpipe;
+        params[72] = getconsumerlist;
+        params[73] = getsewerage;
         Log.e("updateJsonParams", "json : " + Arrays.toString(params));
 
 
@@ -1385,7 +1390,7 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
         @Override
         protected Void doInBackground(String... params) {
             try {
-                String paraName[] = new String[71];
+                String paraName[] = new String[74];
                 paraName[0] = "sAppNo";
                 paraName[1] = "sInitial";
                 paraName[2] = "sFirstName";
@@ -1461,6 +1466,13 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
                 paraName[68] = "sAppTypes";
                 paraName[69] = "sNoOfApps";
                 paraName[70] = "isgovtemp";
+                paraName[71] = "sPassConsumer";
+                paraName[72] = "sPassConList";
+                paraName[73] = "sSewerage";
+
+
+
+
                 updateJsonResponse = invServices.getDataWITHParams(Constants.URL, Constants.NameSpace, Constants.SaveSiteVisitData, params, paraName);
                 Log.e("updateJsonResponse", "json : " + updateJsonResponse);
 

@@ -178,6 +178,216 @@
                     </RadioGroup>
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/common_7_dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Consumer_Premise"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        />
+                    <RadioGroup
+                        android:id="@+id/rg_Consumer_Premise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <elink.suezShimla.water.crm.liquidradiobutton.LiquidRadioButton
+                            android:id="@+id/rb_pipeConsumer_Premiseno"
+                            style="@style/liquidRadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingLeft="5dp"
+                            android:text="No"
+                            android:textSize="15sp" />
+
+                        <elink.suezShimla.water.crm.liquidradiobutton.LiquidRadioButton
+                            android:id="@+id/rb_yes_Consumer_Premise"
+                            style="@style/liquidRadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingLeft="5dp"
+                            android:text="Yes"
+                            android:textSize="15sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/common_7_dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Sewerage"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        />
+                    <RadioGroup
+                        android:id="@+id/rg_Sewerage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <elink.suezShimla.water.crm.liquidradiobutton.LiquidRadioButton
+                            android:id="@+id/rb_Sewerage_Premiseno"
+                            style="@style/liquidRadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingLeft="5dp"
+                            android:text="No"
+                            android:textSize="15sp" />
+
+                        <elink.suezShimla.water.crm.liquidradiobutton.LiquidRadioButton
+                            android:id="@+id/rb_yes_Sewerage"
+                            style="@style/liquidRadioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:paddingLeft="5dp"
+                            android:text="Yes"
+                            android:textSize="15sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llconsumer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/common_7_dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enterconsumer_no"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        />
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="0">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/rightConsumerno"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:focusable="false"
+
+                            android:visibility="visible"
+                            app:boxCornerRadiusBottomEnd="0dp"
+                            app:boxCornerRadiusBottomStart="0dp"
+                            app:boxCornerRadiusTopEnd="0dp"
+                            app:boxCornerRadiusTopStart="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_consumer"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="top|center_horizontal"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:paddingLeft="@dimen/common_7_dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/darker_gray"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <!-- <EditText
+                             android:id="@+id/et_left_consumer"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.3"
+                             android:gravity="start"
+                             android:textColorHint="@android:color/darker_gray"
+                             android:inputType="number"
+                             android:paddingLeft="@dimen/common_7_dp"
+                             android:hint="@string/left_customer"
+                             android:textSize="@dimen/common_15_dp"
+                             android:textStyle="bold" />-->
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            >
+                            <ImageButton
+                                android:id="@+id/bt_consadd"
+                                android:layout_width="@dimen/common_40_dp"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:scaleType="centerInside"
+                                android:padding="@dimen/common_5_dp"
+                                android:background="@drawable/pulusicon"
+                                android:textColor="#fff" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_textttt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/common_7_dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selected Id:"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_consumrno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        />
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -337,15 +547,15 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="45dp"
                                 android:layout_gravity="top|center_horizontal"
-                                android:text=""
-                                android:paddingLeft="@dimen/common_7_dp"
                                 android:inputType="number"
+                                android:maxLength="12"
+                                android:paddingLeft="@dimen/common_7_dp"
+                                android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:textColorHint="@android:color/darker_gray"
-                                android:textStyle="bold"
                                 android:textColor="@color/black"
+                                android:textColorHint="@android:color/darker_gray"
                                 android:textSize="14sp"
-                                android:maxLength="12"/>
+                                android:textStyle="bold" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -682,7 +892,6 @@
                         android:layout_marginRight="@dimen/common_5_dp">
 
                         <com.tiper.MaterialSpinner
-                            android:id="@+id/roadRestorationLengthSpinner"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/common_55_dp"
@@ -701,7 +910,6 @@
 
 
                     <LinearLayout
-                        android:id="@+id/ll_connection_purpose_spinner_edit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/common_10_dp"
@@ -709,7 +917,6 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/noOfFloorInputLayout"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

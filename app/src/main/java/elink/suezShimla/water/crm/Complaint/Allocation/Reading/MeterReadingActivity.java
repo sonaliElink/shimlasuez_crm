@@ -972,10 +972,10 @@ public class MeterReadingActivity extends AppCompatActivity implements GoogleApi
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {
