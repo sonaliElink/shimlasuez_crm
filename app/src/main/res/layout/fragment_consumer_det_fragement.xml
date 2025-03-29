@@ -837,7 +837,7 @@
             android:layout_marginEnd="8dp"
             android:focusable="false"
             android:lineSpacingExtra="6dp"
-            android:text="Water Work"
+            android:text="Zone"
             android:textColor="#86000000"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"

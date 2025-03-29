@@ -12,8 +12,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -64,7 +66,7 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
     /*viren*/
     SiteVisitModel commercialFeasibilityModel, model;
     SiteVisitListActivityDetails activity;
-    Button btn_submit_consumer, btn_technical_back;
+    Button btn_submit_consumer, btn_technical_back,bt_add;
     TextInputEditText etUnit;
     String technicalFeasibilityStr = "", distanceNetworkLineSizeStr = "", roadRestorationLengthStr = "", roadTypeStr = "", roadOwnerShipStr = "", meterSanctionTypeStr = "", unitStr = "";
     String technicalFeasibilityId = "", distanceNetworkLineSizeId = "", roadRestorationLengthId = "Feet",roadTypeValue = "", roadOwnerShipValue = "", roadTypeId = "", roadOwnerShipId = "", meterSanctionTypeId = "", unitId = "", AM_APP_BU = "";
@@ -85,23 +87,24 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
     private RoadRestorationLenRoadModel roadRestorationLenRoadModel;
     private RoadTypeModel roadTypeModel;
     private RoadOwnershipModel roadOwnershipModel;
-
-    TextInputEditText et_left_consumer, et_right_consumer;
+    public LinearLayout llconsumer,ll_textttt;
+    TextInputEditText et_left_consumer, et_right_consumer,et_consumer;
     ImageButton ib_consumer_bid_request;
     String leftConsumerStr = "", rightConsumerStr = "", jsonLeftRightResponse = "",addapplicationtype;
     MaterialDialog progressLeftRightConsumerSearch;
     int selectedID;
     boolean validConsumer = false;
-
+    TextView tv_consumrno;
     RadioGroup rg_connection_feasibility, rg_water_availability_in_dp, rg_road_cutting_required;
     RadioButton rb_connection_feasibility_no, rb_connection_feasibility_yes, rb_water_availability_yes, rb_water_availability_no,
-            rb_road_cutting_required_no, rb_road_cutting_required_yes;
-    String connection_feasibility, road_cutting_required, water_availability;
+            rb_Sewerage_Premiseno,rb_yes_Sewerage,rb_road_cutting_required_no, rb_road_cutting_required_yes,rb_yes_Consumer_Premise,rb_pipeConsumer_Premiseno;
+    String connection_feasibility, road_cutting_required, water_availability,pipeconsumer,SeweragePremiseno;
     TextInputEditText et_distribution_pipeline, et_distribution_id, et_road_length_id;
 
     TextInputLayout distributionPipelineInputLayout, distributionIdInputLayout, leftConsumerInputLayout, rightConsumerInputLayout,
             roadLengthIdConsumerInputLayout,roadTypeIdConsumerInputLayout,roadOwnerShipInputLayout;
-    ;
+    String addconsumer[] = new String[5];
+
     MultiSelectSpinner roadTypeSpinnere,roadOwnerShipSpinnerer;
     ArrayList<String> roadTypeList;
     String STARTTIME = "", ALERTSTARTTIME = "";
@@ -238,9 +241,18 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
 
 
 
+            String[] ConsumerArray= new String[5];
+
+             bt_add.setOnClickListener(new View.OnClickListener() {
+             @Override
+              public void onClick(View v) {
+                String consumeradd= et_consumer.getText().toString();
 
 
-
+                 String addco=consumeradd+",";
+                 tv_consumrno.setText(addco);
+                     }
+});
         }
 
         return rootView;
@@ -353,11 +365,17 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
 
         rb_water_availability_yes = rootView.findViewById(R.id.rb_water_availability_yes);
         rb_water_availability_no = rootView.findViewById(R.id.rb_water_availability_no);
-
+        llconsumer= rootView.findViewById(R.id.llconsumer);
+        tv_consumrno= rootView.findViewById(R.id.tv_consumrno);
+        ll_textttt= rootView.findViewById(R.id.ll_textttt);
         rb_road_cutting_required_no = rootView.findViewById(R.id.rb_road_cutting_required_no);
         rb_road_cutting_required_yes = rootView.findViewById(R.id.rb_road_cutting_required_yes);
-
-
+        rb_pipeConsumer_Premiseno = rootView.findViewById(R.id.rb_pipeConsumer_Premiseno);
+        rb_yes_Consumer_Premise = rootView.findViewById(R.id.rb_yes_Consumer_Premise);
+        et_consumer= rootView.findViewById(R.id.et_consumer);
+        rb_Sewerage_Premiseno = rootView.findViewById(R.id.rb_Sewerage_Premiseno);
+        rb_yes_Sewerage = rootView.findViewById(R.id.rb_yes_Sewerage);
+        bt_add= rootView.findViewById(R.id.bt_add);
         distributionPipelineInputLayout = rootView.findViewById(R.id.distributionPipelineInputLayout);
         distributionIdInputLayout = rootView.findViewById(R.id.distributionIdInputLayout);
         leftConsumerInputLayout = rootView.findViewById(R.id.leftConsumerInputLayout);
@@ -855,9 +873,34 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
 
             return false;
         }
+        if (rb_pipeConsumer_Premiseno.isChecked() || rb_yes_Consumer_Premise.isChecked()) {
+            if (rb_pipeConsumer_Premiseno.isChecked()) {
+                pipeconsumer = "0";
+                llconsumer.setVisibility(View.GONE);
+                ll_textttt.setVisibility(View.GONE);
 
+            } else if (rb_yes_Consumer_Premise.isChecked()) {
+                pipeconsumer = "1";
+                llconsumer.setVisibility(View.VISIBLE);
+                ll_textttt.setVisibility(View.VISIBLE);
+            }
+        } else {
+            Toast.makeText(activity, "Please select Pipe Consumer no required", Toast.LENGTH_SHORT).show();
 
+            return false;
+        }
 
+        if (rb_Sewerage_Premiseno.isChecked() || rb_yes_Sewerage.isChecked()) {
+            if (rb_Sewerage_Premiseno.isChecked()) {
+                SeweragePremiseno = "0";
+            } else if (rb_yes_Sewerage.isChecked()) {
+                SeweragePremiseno = "1";
+            }
+        } else {
+            Toast.makeText(activity, "Please select Consumer Premise required", Toast.LENGTH_SHORT).show();
+
+            return false;
+        }
         distribution_pipeline = et_distribution_pipeline.getText().toString();
         distribution_id = et_distribution_id.getText().toString();
         road_length_id = et_road_length_id.getText().toString();
@@ -868,13 +911,13 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
         roadOwnerShipStr = roadOwnerShipSpinnerer.getSelectedItem().toString();
 
 
-        if (distribution_pipeline.equalsIgnoreCase("")) {
+     /*   if (distribution_pipeline.equalsIgnoreCase("")) {
             distributionPipelineInputLayout.setError(getResources().getString(R.string.cannot_be_empty));
             Toast.makeText(getActivity(), R.string.please_enter_distribution_pipeline, Toast.LENGTH_SHORT).show();
             return false;
         } else {
             distributionPipelineInputLayout.setError(null);
-        }
+        }*/
     /*    if (distribution_id.equalsIgnoreCase("")) {
             distributionIdInputLayout.setError(getResources().getString(R.string.cannot_be_empty));
             Toast.makeText(getActivity(), R.string.please_enter_distribution_id, Toast.LENGTH_SHORT).show();
