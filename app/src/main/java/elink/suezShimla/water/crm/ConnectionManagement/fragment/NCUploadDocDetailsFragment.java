@@ -373,10 +373,10 @@ String  imgDigitalSignature = "",signature="",documentSize = "";
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

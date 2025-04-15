@@ -279,10 +279,10 @@ public class ConsumerDetFragmentNew extends Fragment implements View.OnClickList
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

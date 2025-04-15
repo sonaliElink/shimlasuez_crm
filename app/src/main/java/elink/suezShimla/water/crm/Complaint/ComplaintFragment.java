@@ -409,10 +409,10 @@ public class ComplaintFragment extends Fragment implements View.OnClickListener,
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
            timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

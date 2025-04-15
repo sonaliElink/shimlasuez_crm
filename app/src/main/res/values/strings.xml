@@ -91,12 +91,6 @@
         <item>On behalf of customer</item>
 
     </array>
-    <array name="complaint_for">
-        <!--        <item>Select</item>-->
-        <item>Individual</item>
-        <item>Bulk</item>
-
-    </array>
     <array name="meterNo">
         <item>-- Select --</item>
         <item>a 5423601</item>
@@ -606,7 +600,7 @@
     <string name="date">16-Mar-2019 11:41 AM</string>
     <string name="next">NEXT</string>
     <string name="fixer_name">Fixer Name</string>
-    <string name="middle_name_mandatory">Middle Name </string>
+    <string name="middle_name_mandatory" translatable="false">Middle Name </string>
 
     <string name="first_name_mandatory">First Name *</string>
     <string name="middle_name">Middle Name</string>

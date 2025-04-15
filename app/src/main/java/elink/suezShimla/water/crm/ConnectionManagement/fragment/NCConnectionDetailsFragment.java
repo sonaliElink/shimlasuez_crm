@@ -180,10 +180,10 @@ public class NCConnectionDetailsFragment extends Fragment implements View.OnClic
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

@@ -298,11 +298,11 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
         }
-
+*/
     }
     private Date dateParsing(String dtStart) {
         Date date = null;
@@ -982,7 +982,7 @@ public class NCTechnicalFeasibilityDetailsFragment extends Fragment implements V
                 SeweragePremiseno = "1";
             }
         } else {
-            Toast.makeText(activity, "Please select Consumer Premise required", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, "Please select Sewerage required", Toast.LENGTH_SHORT).show();
 
             return false;
         }

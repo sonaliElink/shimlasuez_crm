@@ -892,7 +892,6 @@
                         android:layout_marginRight="@dimen/common_5_dp">
 
                         <com.tiper.MaterialSpinner
-                            android:id="@+id/roadRestorationLengthSpinner"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/common_55_dp"
@@ -911,7 +910,6 @@
 
 
                     <LinearLayout
-                        android:id="@+id/ll_connection_purpose_spinner_edit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/common_10_dp"
@@ -919,7 +917,6 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/noOfFloorInputLayout"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

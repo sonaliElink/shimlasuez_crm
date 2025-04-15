@@ -192,10 +192,10 @@ ArrayAdapter GovTypeAdapter;
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {

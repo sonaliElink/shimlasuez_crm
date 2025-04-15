@@ -129,10 +129,10 @@ public class WorkAllocationFragment extends Fragment {
         }
         if (isInBetween) {
             submitData = true;
-        } else {
+        } /*else {
 
             timeoutAlertBox();
-        }
+        }*/
 
     }
     private Date dateParsing(String dtStart) {
