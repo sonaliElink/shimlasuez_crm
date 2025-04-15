@@ -91,6 +91,12 @@
         <item>On behalf of customer</item>
 
     </array>
+    <array name="complaint_for">
+        <!--        <item>Select</item>-->
+        <item>Individual</item>
+        <item>Bulk</item>
+
+    </array>
     <array name="meterNo">
         <item>-- Select --</item>
         <item>a 5423601</item>
@@ -600,11 +606,11 @@
     <string name="date">16-Mar-2019 11:41 AM</string>
     <string name="next">NEXT</string>
     <string name="fixer_name">Fixer Name</string>
-    <string name="middle_name_mandatory">Middle Name *</string>
+    <string name="middle_name_mandatory">Middle Name </string>
 
     <string name="first_name_mandatory">First Name *</string>
     <string name="middle_name">Middle Name</string>
-    <string name="last_name_mandatory">Last Name</string>
+    <string name="last_name_mandatory">Last Name *</string>
     <string name="connection_request">Connection Request</string>
     <string name="select_options">Select Options</string>
     <string name="consumer_details">Consumer Details</string>
@@ -1286,16 +1292,16 @@
     <string name="document_uploading">Document uploading...</string>
     <string name="digital_signature_uploaded_successfully">Digital signature uploaded successfully</string>
     <string name="connection_feasibility">Connection feasibility *</string>
-    <string name="distribution_pipeline">Distribution pipeline size (in MM)</string>
+    <string name="distribution_pipeline">Distribution pipeline size (in MM) *</string>
     <string name="water_availability_in_dp">Water Availability in DP *</string>
-    <string name="distribution_id">Distribution Pipe ID </string>
+    <string name="distribution_id">Distribution Pipe ID *</string>
     <string name="distribution_id_manditory" translatable="false">Distribution Pipe ID *</string>
     <string name="road_cutting_required">Road Cutting Required *</string>
     <string name="Sewerage">Sewerage Available*</string>
     <string name="road_length">Road Length (in Meter) *</string>
     <string name="left_customer">Left Customer *</string>
     <string name="Consumer_Premise">Existing Pipe Passing to Consumer Premise*</string>
-    <string name="enterconsumer_no">Enter Consumer No</string>
+    <string name="enterconsumer_no">Enter Consumer ID</string>
 
     <string name="right_customer">Right Customer *</string>
     <string name="construction_completed">Construction Completed</string>
@@ -1312,7 +1318,7 @@
     <string name="please_enter_consumer_number">Please enter Customer number</string>
     <string name="please_enter_floor_number">Please enter floor number</string>
     <string name="please_enter_left_consumer_number">Please enter left Customer number</string>
-    <string name="please_enter_right_consumer_number">Please enter right Customer number</string>
+    <string name="please_enter_right_consumer_number">Please enter Customer number</string>
     <string name="valid">Valid</string>
     <string name="invalid">Invalid</string>
     <string name="please_select_connection_size">Please select connection size</string>

@@ -763,11 +763,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:backgroundTint="#85C908"
-                    android:text="Next"
                     android:gravity="center"
+                    android:text="Next"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
 
             </LinearLayout>
 

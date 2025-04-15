@@ -341,6 +341,7 @@
 
 
                         <LinearLayout
+                            android:id="@+id/ll_add"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.4"
@@ -348,7 +349,7 @@
                             android:layout_marginTop="@dimen/common_5_dp"
                             >
                             <ImageButton
-                                android:id="@+id/bt_add"
+                                android:id="@+id/bt_consadd"
                                 android:layout_width="@dimen/common_40_dp"
                                 android:layout_height="@dimen/common_40_dp"
                                 android:scaleType="centerInside"
@@ -369,8 +370,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical"
-                    android:layout_margin="@dimen/common_7_dp"
-                    android:visibility="gone">
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/common_7_dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selected Id:"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        />
+
                     <TextView
                         android:id="@+id/tv_consumrno"
                         android:layout_width="match_parent"
@@ -378,6 +386,8 @@
                         android:layout_marginLeft="@dimen/common_10_dp"
                         />
                 </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -1137,51 +1137,51 @@ public class NewMeterDetFragment extends Fragment implements View.OnClickListene
 
             MMGScreenActivity.animationOnArrow();
         } else {
+try {
+    //UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METER_NO);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METER_NO, meterNoStr);
 
-            //UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METER_NO);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METER_NO, meterNoStr);
+    mmgMeterSizeModel = realmOperations.fetchMeterSizeByName(sizeStr);
+    meterSizeId = String.valueOf(mmgMeterSizeModel.getMCS_ID());
 
-            mmgMeterSizeModel = realmOperations.fetchMeterSizeByName(sizeStr);
-            meterSizeId = String.valueOf(mmgMeterSizeModel.getMCS_ID());
+    sendMtrSize.sendmeterSize(sizeStr, meterSizeId);
 
-            sendMtrSize.sendmeterSize(sizeStr, meterSizeId);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_MAKERCODE);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_MAKERCODE, makerCodeId);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_MAKERCODE);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_MAKERCODE, makerCodeId);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERNUM);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERNUM, meterNoStr);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERNUM);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERNUM, meterNoStr);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_INSTALLDATE);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_INSTALLDATE, installDtStr);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_INSTALLDATE);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_INSTALLDATE, installDtStr);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERSIZE);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERSIZE, meterSizeId);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERSIZE);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERSIZE, meterSizeId);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_SEALNO);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_SEALNO, sealNoStr);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_SEALNO);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_SEALNO, sealNoStr);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_INITIALREADING);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_INITIALREADING, initialReadingStr);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_INITIALREADING);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_INITIALREADING, initialReadingStr);
-
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_AVERAGECONSUMTION);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_AVERAGECONSUMTION, newAvrageconsum);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_AVERAGECONSUMTION);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_AVERAGECONSUMTION, newAvrageconsum);
 
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERTYPE);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERTYPE, meterTypeId);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERTYPE);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERTYPE, meterTypeId);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERLOCATION);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERLOCATION, meterLocationId);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_METERLOCATION);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_METERLOCATION, meterLocationId);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_PROTECTEDBOX);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_PROTECTEDBOX, protectedBoxIdStr);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_PROTECTEDBOX);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_PROTECTEDBOX, protectedBoxIdStr);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_TAXNO);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_TAXNO, taxNoStr);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.NEW_TAXNO);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.NEW_TAXNO, taxNoStr);
 
-            UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.MATERIALHANDOVER);
-            UtilitySharedPreferences.setPrefs(getActivity(), Constants.MATERIALHANDOVER, meterHandoverIdStr);
+    UtilitySharedPreferences.clearPrefKey(getActivity(), Constants.MATERIALHANDOVER);
+    UtilitySharedPreferences.setPrefs(getActivity(), Constants.MATERIALHANDOVER, meterHandoverIdStr);
 
 
           /*  if (pagename != null) {
@@ -1192,8 +1192,11 @@ public class NewMeterDetFragment extends Fragment implements View.OnClickListene
                     getMeterContractorDetails("M");
                 }
             } else {*/
-                getMeterContractorDetails("M");
-           // }
+    getMeterContractorDetails("M");
+    // }
+}catch (Exception e){
+    Log.e("crash",e.getMessage());
+}
         }
     }
 
@@ -1829,6 +1832,7 @@ public class NewMeterDetFragment extends Fragment implements View.OnClickListene
 
             } catch (Exception e) {
                 e.printStackTrace();
+                Log.e("crash", "response-"+e.getMessage());
             }
             return null;
         }

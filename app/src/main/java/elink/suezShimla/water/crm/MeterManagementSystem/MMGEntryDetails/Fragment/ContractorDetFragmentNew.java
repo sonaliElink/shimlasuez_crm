@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -297,19 +298,25 @@ public class ContractorDetFragmentNew extends Fragment implements View.OnClickLi
             strRemovedMaterialHandoverEnable = false;
             removdMaterialSpinner.setEnabled(false);
         }
+        try {
 
         //setInstallMI_CONTRACTOR();
         contractorName = realmOperations.fetchVendorDetails();
+        Toast.makeText(mCon, "Size "+contractorName.size(), Toast.LENGTH_SHORT).show();
         contractorList = new ArrayList<>();
         contractorList.add("--Select--");
         contractorList.addAll(contractorName);
         contractorList.add("MMG Employee");
 //        contractorList.add("Other");//have to remove
 
-        contractorAdapter = new ArrayAdapter(mCon, android.R.layout.simple_spinner_item, contractorList);
-        contractorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        contractorNameSpinner.setAdapter(contractorAdapter);
-        //contractorNameSpinner.setOnItemSelectedListener(this);
+
+            contractorAdapter = new ArrayAdapter(mCon, android.R.layout.simple_spinner_item, contractorList);
+            contractorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            contractorNameSpinner.setAdapter(contractorAdapter);
+            //contractorNameSpinner.setOnItemSelectedListener(this);
+        }catch (Exception e){
+            Log.e("crash",e.getMessage());
+        }
 
         setOldFixerData();
 
@@ -624,51 +631,52 @@ public class ContractorDetFragmentNew extends Fragment implements View.OnClickLi
 
             switch (parent.getId()) {
                 case R.id.contractorNameSpinner:
-                    if (contractorNameStr.equalsIgnoreCase("Select")) {
-                        venderCodeEditText.setText("");
-                    } else if (contractorNameStr.equalsIgnoreCase("--Select--")) {
-                        venderCodeEditText.setText("");
-                    } else if (contractorNameStr.equalsIgnoreCase("OTHER")) {
-                        c_id = "-99";
-                        c_emp_id = "";
-                        contractorEmpEditText.setVisibility(View.VISIBLE);
-                        contractorEmpSpinner.setVisibility(View.GONE);
+                    try {
+                        if (contractorNameStr.equalsIgnoreCase("Select")) {
+                            venderCodeEditText.setText("");
+                        } else if (contractorNameStr.equalsIgnoreCase("--Select--")) {
+                            venderCodeEditText.setText("");
+                        } else if (contractorNameStr.equalsIgnoreCase("OTHER")) {
+                            c_id = "-99";
+                            c_emp_id = "";
+                            contractorEmpEditText.setVisibility(View.VISIBLE);
+                            contractorEmpSpinner.setVisibility(View.GONE);
 
-                        vendor_other_code.setText("Other Fixer*");
-                        venderCodeEditText.setText("");
-                        contractorEmpEditText.setText("");
-                        venderCodeEditText.setEnabled(true);
-                        venderCodeEditText.setHint("Please Enter Plumber");
+                            vendor_other_code.setText("Other Fixer*");
+                            venderCodeEditText.setText("");
+                            contractorEmpEditText.setText("");
+                            venderCodeEditText.setEnabled(true);
+                            venderCodeEditText.setHint("Please Enter Plumber");
 
-                        setOtherContractorDetails();
+                            setOtherContractorDetails();
 
-                    } else if (contractorNameStr.equalsIgnoreCase("MMG Employee")) {
-                        c_id = "-98";
+                        } else if (contractorNameStr.equalsIgnoreCase("MMG Employee")) {
+                            c_id = "-98";
 
-                        mmgContEmpModel = realmOperations.fetchcontractorEmpByVendor(c_id);
-                        c_emp_id = String.valueOf(mmgContEmpModel.getEM_EMP_CODE());
+                            mmgContEmpModel = realmOperations.fetchcontractorEmpByVendor(c_id);
+                            c_emp_id = String.valueOf(mmgContEmpModel.getEM_EMP_CODE());
 
-                        contractorEmpEditText.setVisibility(View.GONE);
-                        contractorEmpEditText.getText().clear();
-                        contractorEmpSpinner.setVisibility(View.VISIBLE);
+                            contractorEmpEditText.setVisibility(View.GONE);
+                            contractorEmpEditText.getText().clear();
+                            contractorEmpSpinner.setVisibility(View.VISIBLE);
 
-                        vendor_other_code.setText("Emp  Code*");
-                        venderCodeEditText.setText("");
-                        venderCodeEditText.setHint("Enter employee Id");
+                            vendor_other_code.setText("Emp  Code*");
+                            venderCodeEditText.setText("");
+                            venderCodeEditText.setHint("Enter employee Id");
 
-                        venderCodeEditText.setEnabled(false);
-                        contractorEmployee = realmOperations.fetchVendorByEmpCode(c_id);
-                        contractorEmpList = new ArrayList<>();
-                        contractorEmpList.add("--Select--");
-                        contractorEmpList.addAll(contractorEmployee);
+                            venderCodeEditText.setEnabled(false);
+                            contractorEmployee = realmOperations.fetchVendorByEmpCode(c_id);
+                            contractorEmpList = new ArrayList<>();
+                            contractorEmpList.add("--Select--");
+                            contractorEmpList.addAll(contractorEmployee);
 
-                        contractorEmpAdapter = new ArrayAdapter<>(mCon, android.R.layout.simple_spinner_item, contractorEmpList);
-                        contractorEmpAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                        contractorEmpSpinner.setAdapter(contractorEmpAdapter);
+                            contractorEmpAdapter = new ArrayAdapter<>(mCon, android.R.layout.simple_spinner_item, contractorEmpList);
+                            contractorEmpAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                            contractorEmpSpinner.setAdapter(contractorEmpAdapter);
 
-                        setInstallMI_CONTRACTOREMP();
+                            setInstallMI_CONTRACTOREMP();
 
-                        String commisioned_noncommisioned = UtilitySharedPreferences.getPrefs(mCon, Constants.COMMISIONED_NONCOMMISIONED);
+                            String commisioned_noncommisioned = UtilitySharedPreferences.getPrefs(mCon, Constants.COMMISIONED_NONCOMMISIONED);
 
                        /* if (commisioned_noncommisioned.equalsIgnoreCase("N")) {
                             contractorEmpSpinner.setOnItemSelectedListener(this);
@@ -676,49 +684,49 @@ public class ContractorDetFragmentNew extends Fragment implements View.OnClickLi
 
                         }*/
 
-                        //Log.e("CHECK_NULL", "CHECK_NULL :" + contactorEmpId);
-                        if (c_emp_id != null && !contactorEmpId.isEmpty()) {
-                            mmgContEmpModel = realmOperations.fetchMMGContractorName(contactorEmpId);
-                            fixerName = mmgContEmpModel.getNAME();
+                            //Log.e("CHECK_NULL", "CHECK_NULL :" + contactorEmpId);
+                            if (c_emp_id != null && !contactorEmpId.isEmpty()) {
+                                mmgContEmpModel = realmOperations.fetchMMGContractorName(contactorEmpId);
+                                fixerName = mmgContEmpModel.getNAME();
 
-                            index = contractorEmpList.indexOf(fixerName);
-                            if (index != -1) {
-                                contractorEmpSpinner.setSelection(index);
-                                //contractorEmpSpinner.setEnabled(false);temlrupa
-                            } else {
-                                contractorEmpSpinner.setSelection(0);
-                                contractorEmpSpinner.setEnabled(true);
+                                index = contractorEmpList.indexOf(fixerName);
+                                if (index != -1) {
+                                    contractorEmpSpinner.setSelection(index);
+                                    //contractorEmpSpinner.setEnabled(false);temlrupa
+                                } else {
+                                    contractorEmpSpinner.setSelection(0);
+                                    contractorEmpSpinner.setEnabled(true);
+                                }
                             }
-                        }
 
-                        contractorEmpEditText.setVisibility(View.GONE);
-                        contractorEmpSpinner.setVisibility(View.VISIBLE);
-                    } else {
-                        mmgVendorDetModel = realmOperations.fetchVendorByName(contractorNameStr);
-                        c_id = String.valueOf(mmgVendorDetModel.getEM_EMP_CODE());
-                        contractorEmpEditText.setVisibility(View.GONE);
-                        contractorEmpEditText.getText().clear();
-                        contractorEmpSpinner.setVisibility(View.VISIBLE);
+                            contractorEmpEditText.setVisibility(View.GONE);
+                            contractorEmpSpinner.setVisibility(View.VISIBLE);
+                        } else {
+                            mmgVendorDetModel = realmOperations.fetchVendorByName(contractorNameStr);
+                            c_id = String.valueOf(mmgVendorDetModel.getEM_EMP_CODE());
+                            contractorEmpEditText.setVisibility(View.GONE);
+                            contractorEmpEditText.getText().clear();
+                            contractorEmpSpinner.setVisibility(View.VISIBLE);
 
-                        venderCodeEditText.setText(c_id);
-                        venderCodeEditText.setEnabled(false);
-                        //contractorEmployee = realmOperations.fetchVendorByEmpCode(contractorId);
+                            venderCodeEditText.setText(c_id);
+                            venderCodeEditText.setEnabled(false);
+                            //contractorEmployee = realmOperations.fetchVendorByEmpCode(contractorId);
 
-                        mmgContEmpModelRealmResults = realmOperations.fetchVendorByContractorList(c_id);
+                            mmgContEmpModelRealmResults = realmOperations.fetchVendorByContractorList(c_id);
 
-                        contractorEmpList.clear();
-                        contractorEmpIdList.clear();
+                            contractorEmpList.clear();
+                            contractorEmpIdList.clear();
 
-                        contractorEmpList.add("--Select--");
-                        for (MMGContEmpModel model : mmgContEmpModelRealmResults) {
-                            contractorEmpList.add(model.getNAME());
-                            contractorEmpIdList.add(model.getEM_EMP_CODE());
-                        }
-                        contractorEmpAdapter = new ArrayAdapter<>(mCon, android.R.layout.simple_spinner_item, contractorEmpList);
-                        contractorEmpAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                        contractorEmpSpinner.setAdapter(contractorEmpAdapter);
+                            contractorEmpList.add("--Select--");
+                            for (MMGContEmpModel model : mmgContEmpModelRealmResults) {
+                                contractorEmpList.add(model.getNAME());
+                                contractorEmpIdList.add(model.getEM_EMP_CODE());
+                            }
+                            contractorEmpAdapter = new ArrayAdapter<>(mCon, android.R.layout.simple_spinner_item, contractorEmpList);
+                            contractorEmpAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                            contractorEmpSpinner.setAdapter(contractorEmpAdapter);
 
-                        setInstallMI_CONTRACTOREMP();
+                            setInstallMI_CONTRACTOREMP();
 
                        /* if (isComingFromBack) {
                             for (int i = 0; i < contractorEmpIdList.size(); i++) {
@@ -745,13 +753,16 @@ public class ContractorDetFragmentNew extends Fragment implements View.OnClickLi
                             setInstallMI_CONTRACTOREMP();
                         }*///pinky commented 10/02/2022
 
-                        mmgContEmpModel = realmOperations.fetchcontractorEmpByName(contractorEmployeeStr);
-                        c_emp_id = mmgContEmpModel.getEM_EMP_CODE();
-                        // c_id = mmgContEmpModel.getEM_VENDOR_ID();
+                            mmgContEmpModel = realmOperations.fetchcontractorEmpByName(contractorEmployeeStr);
+                            c_emp_id = mmgContEmpModel.getEM_EMP_CODE();
+                            // c_id = mmgContEmpModel.getEM_VENDOR_ID();
 
+                            break;
+                        }
                         break;
+                    }catch (Exception e){
+                        Log.e("crash","item click"+e.getMessage());
                     }
-                    break;
                 case R.id.contractorEmpSpinner:
                     contractorEmployeeStr = contractorEmpSpinner.getSelectedItem().toString();
                     if (!contractorEmployeeStr.equalsIgnoreCase("--Select--")) {

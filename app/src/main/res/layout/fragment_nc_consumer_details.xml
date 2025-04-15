@@ -525,15 +525,15 @@
                                         <com.google.android.material.textfield.TextInputEditText
                                             android:id="@+id/etmiddlesName"
                                             android:layout_width="match_parent"
-                                            android:layout_height="45dp"
+                                            android:layout_height="47dp"
                                             android:layout_gravity="top|center_horizontal"
+                                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ."
                                             android:hint="@string/middle_name_mandatory"
                                             android:inputType="text"
-                                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ."
+                                            android:maxLength="30"
                                             android:textColor="@color/black"
                                             android:textColorHint="#fff"
-                                            android:textSize="14sp"
-                                            android:maxLength="30"/>
+                                            android:textSize="14sp" />
                                     </com.google.android.material.textfield.TextInputLayout>
 
 

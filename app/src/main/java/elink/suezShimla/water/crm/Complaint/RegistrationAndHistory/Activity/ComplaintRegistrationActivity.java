@@ -111,13 +111,13 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
     // string to get from Intent & 1st parameter values;
     private String firstName, middleName, lastName, lastBillAmount, arrearAmt, mobileNo, consumerNoStr, referanceNoStr, emailStr,
             value1, value2, subZoneStr, statusStr, fullName = "", mobStr = "", complaintById = "", departmentID = "", mainComplaintID = "", mainComplaintCode = "",
-            whatsAppNumberStr = "", isRepeatCallStr = "";
+            whatsAppNumberStr = "", isRepeatCallStr = "",complaintfor="";
 
 
     private int hdnTheft, lblSAPhase, zoneStr;
 
     // rest parameters
-    private String originStr, originIdStr, complaintTypeStr, complaintTypeIdStr, complaintSubTypeStr, complaintSubTypeIdStr, sourceTypeStr, sourceTypeIdStr = "5",
+    private String complaintForStrSpinner="",originStr, originIdStr, complaintTypeStr, complaintTypeIdStr, complaintSubTypeStr, complaintSubTypeIdStr, sourceTypeStr, sourceTypeIdStr = "5",
             priorityStr, informDateStr, remarkStr, meterNoStr, yearMonthStr, hdnYearMonth, hdnBaStr, sendSmsStr, namePrefixStr, firstNameStr = "", meterNo,
             middleNameStr, lastNameStr, complaintForStr, oldComplaintNoStr, empCodeStr, ipAddressStr, zoneId, subZoneId, compOriginStr = "1", landmark = "", city = "",
             postal_code = "", mobileNoStr = "", serviceId = "", serviceTypeStr = "", addressStr = "", serviceComplaintSubTypeStr = "", serviceType = "", remarkString = "";
@@ -276,7 +276,8 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
         complaintSubTypeSpinner = findViewById(R.id.complaintSubTypeSpinner);
         sourceTypeSpinner = findViewById(R.id.sourceTypeSpinner);
         namePrefixSpinner = findViewById(R.id.namePrefixSpinner);
-        //complaintForSpinner = findViewById(R.id.complaintForSpinner);
+        complaintForSpinner = findViewById(R.id.complaintForSpinner);
+        complaintForSpinner.setSelection(0);
         complaintBySpinner = findViewById(R.id.complaintBySpinner);
         complaintBySpinner.setSelection(0);
         TypeSpinner = findViewById(R.id.TypeSpinner);
@@ -345,7 +346,7 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
 
         //    setComplaintByDropDown();
         setSourceTypeDropDown("2");
-
+        complaintForStrSpinner=complaintForSpinner.getSelectedItem().toString();
 
        /* complaintSubTypeAdapter = new ArrayAdapter(mCon, android.R.layout.simple_spinner_item, complaintSubTypeList);
         complaintSubTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -487,6 +488,18 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
                 } else if (position == 3) {
                     priorityStr = "S";
                 }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        complaintBySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                complaintForStrSpinner= complaintForSpinner.getSelectedItem().toString();
             }
 
             @Override
@@ -1356,7 +1369,7 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
             e.printStackTrace();
         }
 
-        String params[] = new String[30];
+        String params[] = new String[31];
 
         params[0] = firstParameter;
         params[1] = complaintTypeIdStr;
@@ -1389,6 +1402,7 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
         params[27] = emailStr;
         params[28] = serviceTypeStr;
         params[29] = whatsAppNumberStr;
+        params[30] = complaintForStrSpinner;
 
         Log.d("check", Arrays.toString(params));
 
@@ -1609,7 +1623,7 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
         @Override
         protected Void doInBackground(String... params) {
             try {
-                String paraName[] = new String[30];
+                String paraName[] = new String[31];
                 paraName[0] = "CommaSepareted";
                 paraName[1] = "CompType";
                 paraName[2] = "InformedDt";
@@ -1640,6 +1654,8 @@ public class ComplaintRegistrationActivity extends AppCompatActivity implements 
                 paraName[27] = "RegEmail";
                 paraName[28] = "ServiceType";
                 paraName[29] = "WhatsApp";
+                paraName[30] = "com_comp_for";
+
 
 
                 jsonResponse = invServices.getDataWITHParams(Constants.URL, Constants.NameSpace, Constants.ComplaintRegistration, params, paraName);
