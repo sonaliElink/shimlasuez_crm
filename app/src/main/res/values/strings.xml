@@ -308,6 +308,12 @@
         <item>Call Center</item>
         <item>Camp</item>
     </array>
+    <array name="complaint_for">
+        <!--        <item>Select</item>-->
+        <item>Individual</item>
+        <item>Bulk</item>
+
+    </array>
     <array name="issue_meter_observation">
         <item>Observation</item>
         <item>All</item>

@@ -1028,30 +1028,7 @@ public class WorkAllocationCompletionActivity extends AppCompatActivity implemen
                 paraNames[14] = "Origin";
                 paraNames[15] = "ServType";
 
-               /* String paraNames[] = new String[19];
 
-                paraNames[0] = "SearchFor";
-                paraNames[1] = "FromDate";
-                paraNames[2] = "ToDate";
-                paraNames[3] = "ConsumerNo";
-                paraNames[4] = "CompType";
-                paraNames[5] = "CompSubType";
-                paraNames[6] = "ZoneId";
-                paraNames[7] = "ZoneText";
-                paraNames[8] = "SubZoneId";
-                paraNames[9] = "w_usertag";
-                paraNames[10] = "IsAndroid";
-
-                paraNames[11] = "LoggedInUser";
-                paraNames[12] = "SR";
-                paraNames[13] = "DMA";
-                paraNames[14] = "Source";
-                paraNames[15] = "CustomerType";
-                paraNames[16] = "LoginUser";
-                paraNames[17] = "Origin";
-                paraNames[18] = "ServType";*/
-/* <Origin>string</Origin>
-      <ServType>string</ServType>*/
 
 
                 jsonResponse = invServices.getDataWITHParams(Constants.URL, Constants.NameSpace, Constants.Complaint_GetWorkCompletionData, params, paraNames);
