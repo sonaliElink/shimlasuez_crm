@@ -1004,7 +1004,16 @@ public class LoginActivity extends AppCompatActivity implements
                             editor.putString("deptright", DEPARTMENTrights);
 
                             editor.commit();
-                            if (AppVersion.equalsIgnoreCase(versionName)) {
+
+                            //check only app version and ignore sub version
+                            // Split by dot
+                            String[] parts1 = AppVersion.split("\\.");
+                            String[] parts2 = versionName.split("\\.");
+                            // Get first two parts and form the version strings
+                            String version1 = parts1[0] + "." + parts1[1];//version from api
+                            String version2 = parts2[0] + "." + parts2[1];//version from device
+                           // if (AppVersion.equalsIgnoreCase(versionName)) {
+                            if (version1.equalsIgnoreCase(version2)) {
 
                                 if (lASTLOGIN.equalsIgnoreCase("")) {
                                     Intent i = new Intent(mCon, AuthenticateRegistrationActivity.class);
